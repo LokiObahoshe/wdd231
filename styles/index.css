@@ -1,0 +1,157 @@
+:root {
+    --background: #E2B779;
+    --foreground: #735E3F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Itim", cursive;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--foreground);
+    padding: 15px 0;
+    margin: 0;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+}
+
+nav a:hover {
+    background-color: var(--background);
+    color: black;
+    transform: scale(1.1);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: auto;
+    background-color: var(--background);
+    margin: 0;
+    padding: 20px
+}
+
+header img {
+    max-width: 25%;
+    width: 100px;
+    margin-left: 20px;
+    box-shadow: 0 0 20px gray;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: grid;
+    min-height: auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+    padding: 10px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+}
+
+footer p {
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+li {
+    font-size: 20px;
+    margin: 20px;
+}
+
+nav a,
+header h1,
+li {
+    padding: 10px;
+}
+
+/* Class Selectors */
+
+.card {
+    background-color: white;
+    height: 100%;
+    border: 1px solid var(--foreground);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card p {
+    flex-grow: 1;
+    padding: 15px 20px;
+    font-size: 21px;
+}
+
+.headernameandimg,
+.footercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.headernameandimg {
+    margin: 20px;
+}
+
+.footercolor {
+    color: #261908;
+    font-size: 18px;
+}
+
+.usaalign {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.usaalign img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.cardh2design {
+    background-color: var(--background);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 10px;
+    margin: -10px 0 20px 0;
+}

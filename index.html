@@ -1,15 +1,61 @@
-<!-- Hello! -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Web Frontend Development - Rebecca Sonderegger</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - Rebecca Sonderegger - Homepage">
+    <meta name="author" content="Rebecca Sonderegger">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
-    <h1>Testing page</h1>
+    <header>
+        <div class="headernameandimg">
+            <img src="images/profile.jpg" alt="profile image">
+            <h1>Rebecca Sonderegger</h1>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Chamber</a>
+            <a href="https://github.com/LokiObahoshe">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/rebecca-sonderegger-7361632a0/">LinkedIn</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 class="cardh2design">Course Work</h2>
+            <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2 class="cardh2design">United States</h2>
+            <div class="usaalign">
+                <img src="images/unitedstates.jpeg" alt="usaflag">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
+            <img src="images/usaflag.png" alt="usa flag image">
+        </div>
+        <p class="footercolor">Last Update: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
