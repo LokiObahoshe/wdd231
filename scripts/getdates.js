@@ -79,23 +79,33 @@ const courses = [
 ]
 
 const courseListContainer = document.getElementById('courseList');
+const totalCreditsContainer = document.getElementById('totalCredits'); // Container to display total credits
 
 function displayCourses(courseArray) {
+    // This line is important, because it removes any duplication problems
+    // for the courses provided
     courseListContainer.innerHTML = '';
+
+    // This line of code I believe sums up the credits to be displayed
+    let totalCredits = courseArray.reduce((total, course) => total + course.credits, 0);
+
+    // This is what displays the courses
     courseArray.forEach(course => {
         const courseDiv = document.createElement('div');
-
         const ifCompleted = course.completed ? 'completed' : 'incomplete';
         courseDiv.classList.add(ifCompleted);
 
         courseDiv.innerHTML = `<h2>${course.subject} ${course.number}</h2>`;
-
         courseListContainer.appendChild(courseDiv);
     });
+
+    // This displays the credits
+    totalCreditsContainer.textContent = `Total Credits: ${totalCredits}`;
 }
 
 displayCourses(courses);
 
+// These are event listeners for filtering
 document.getElementById('allCoursesButton').addEventListener('click', () => {
     displayCourses(courses);
 });
@@ -110,12 +120,15 @@ document.getElementById('cseCoursesButton').addEventListener('click', () => {
     displayCourses(cseCourses);
 });
 
+// The Modified Dates
 const currentYear = new Date().getFullYear();
 document.getElementById("currentyear").textContent = currentYear;
 
 const lastModified = document.lastModified;
 document.getElementById('lastModified').textContent = lastModified;
 
+
+// The Hamburger
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 
