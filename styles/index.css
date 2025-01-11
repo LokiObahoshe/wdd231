@@ -1,6 +1,6 @@
 :root {
     --background: #E2B779;
-    --foreground: #735E3F;
+    --foreground: #5B4B32;
 }
 
 * {
@@ -14,16 +14,20 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    flex-direction: column;
     background-color: var(--foreground);
     padding: 15px 0;
     margin: 0;
     align-items: center;
+    max-width: 80%;
 }
 
 nav a {
+    display: none;
     color: white;
     text-decoration: none;
     font-size: 28px;
+    margin: 10px;
 }
 
 nav a:hover {
@@ -33,13 +37,13 @@ nav a:hover {
 }
 
 header {
+    align-items: center;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: auto;
     background-color: var(--background);
-    margin: 0;
-    padding: 20px
+    padding: 20px;
 }
 
 header img {
@@ -48,19 +52,18 @@ header img {
     margin-left: 20px;
     box-shadow: 0 0 20px gray;
     object-fit: cover;
-    margin-right: 30px;
 }
 
 header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 main {
     display: grid;
-    min-height: auto;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     gap: 15px;
     padding: 20px;
     max-width: 100%;
@@ -71,8 +74,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 100%;
     background-color: var(--background);
     text-align: center;
     padding: 10px;
@@ -80,12 +81,11 @@ footer {
 
 footer img {
     width: 50px;
-    height: auto;
-    margin-left: 10px;
+    max-width: 100px;
+    height: 45px;
 }
 
 footer p {
-    align-items: center;
     font-size: 20px;
     margin: 5px 0;
 }
@@ -93,12 +93,30 @@ footer p {
 li {
     font-size: 20px;
     margin: 20px;
+    padding: 10px;
 }
 
-nav a,
-header h1,
-li {
-    padding: 10px;
+button {
+    margin: 10px;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: var(--foreground);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--background);
+    color: black;
+    transform: scale(1.1);
+}
+
+figure {
+    text-align: center;
+    color: #261908;
 }
 
 /* Class Selectors */
@@ -110,6 +128,9 @@ li {
     border-radius: 10px;
     box-sizing: border-box;
     padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
 }
 
 .card p {
@@ -141,7 +162,7 @@ li {
 }
 
 .usaalign img {
-    width: 100px;
+    width: 50%;
     height: auto;
     object-fit: cover;
 }
@@ -150,8 +171,117 @@ li {
     background-color: var(--background);
     width: 100%;
     padding: 20px;
-    box-sizing: border-box;
     text-align: center;
     border-radius: 10px;
     margin: -10px 0 20px 0;
+}
+
+.thirdsection {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#courseList {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.completed,
+.incomplete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.completed {
+    background-color: #CEF5C0;
+    border: 1px solid #56794A;
+}
+
+.incomplete {
+    background-color: #F8B5B5;
+    border: 1px solid #6E4747;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 20%;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #FFE6BB;
+}
+
+@media screen and (min-width: 500px) {
+
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    nav {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        font-size: 27px;
+    }
+
+    header {
+        align-items: normal;
+    }
+
+    header h1 {
+        font-size: 35px;
+    }
+
+    header img {
+        margin-right: 30px;
+    }
+
+    footer img {
+        height: auto;
+        margin-left: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    #courseList {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

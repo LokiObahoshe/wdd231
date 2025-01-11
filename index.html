@@ -20,7 +20,7 @@
             <img src="images/profile.jpg" alt="profile image">
             <h1>Rebecca Sonderegger</h1>
         </div>
-        <nav>
+        <nav class="navigation">
             <a href="#">Home</a>
             <a href="#">Chamber</a>
             <a href="https://github.com/LokiObahoshe">GitHub Profile</a>
@@ -30,6 +30,7 @@
 
     <main>
         <section class="card">
+            <button id="menu" aria-label="Open menu"></button>
             <h2 class="cardh2design">Course Work</h2>
             <div>
                 <ul>
@@ -44,15 +45,30 @@
         <section class="card">
             <h2 class="cardh2design">United States</h2>
             <div class="usaalign">
-                <img src="images/unitedstates.jpeg" alt="usaflag">
+                <figure>
+                    <img src="images/unitedstates.webp" alt="usaflag">
+                    <figcaption>Washington Monument</figcaption>
+                </figure>
             </div>
+        </section>
+
+        <section class="card thirdsection">
+            <h2 class="cardh2design">Web and Computer Programming Certificate</h2>
+            <div>
+                <button id="allCoursesButton">All</button>
+                <button id="wddCoursesButton">WDD</button>
+                <button id="cseCoursesButton">CSE</button>
+            </div>
+            <hr>
+            <div id="courseList"></div>
+
         </section>
     </main>
 
     <footer>
         <div class="footercontainer">
             <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
-            <img src="images/usaflag.png" alt="usa flag image">
+            <img src="images/usaflag.webp" alt="usa flag image">
         </div>
         <p class="footercolor">Last Update: <span id="lastModified"></span></p>
     </footer>
