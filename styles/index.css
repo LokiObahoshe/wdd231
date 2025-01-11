@@ -80,9 +80,10 @@ footer {
 }
 
 footer img {
-    width: 50px;
-    max-width: 100px;
-    height: 45px;
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+    object-fit: contain;
 }
 
 footer p {
@@ -268,7 +269,6 @@ figure {
     }
 
     footer img {
-        height: auto;
         margin-left: 10px;
     }
 
