@@ -236,7 +236,8 @@ figure {
 }
 
 .active {
-    background-color: #FFE6BB;
+    background-color: #C2975A;
+    color: black;
 }
 
 @media screen and (min-width: 500px) {

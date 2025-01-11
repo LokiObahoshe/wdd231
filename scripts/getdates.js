@@ -80,7 +80,6 @@ const courses = [
 
 const courseListContainer = document.getElementById('courseList');
 
-// Function to display courses
 function displayCourses(courseArray) {
     courseListContainer.innerHTML = '';
     courseArray.forEach(course => {
