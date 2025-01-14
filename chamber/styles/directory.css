@@ -1,0 +1,217 @@
+:root {
+    --foreground: #060270;
+    --background: #C9C8F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+}
+
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
+    padding: 15px 0;
+    margin: 0;
+    align-items: center;
+    max-width: 50%;
+}
+
+nav a {
+    display: none;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+nav a:hover {
+    text-decoration: overline;
+    background-color: var(--foreground);
+    color: white;
+    font-weight: 400;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background);
+    text-align: center;
+    padding: 10px;
+}
+
+.footercontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 20%;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #6C6B93;
+    color: white;
+}
+
+.hero {
+    max-width: 100%;
+    height: auto;
+}
+
+.card div,
+.card3 div {
+    background-color: var(--foreground);
+    color: white;
+}
+
+.card,
+.card2 {
+    background-color: white;
+    height: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.card p,
+.card2 p,
+.card3 p {
+    flex-grow: 1;
+    font-size: 17px;
+}
+
+.card3,
+.card2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card2 div {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.card3 img {
+    padding: 15px;
+}
+
+.businesscard {
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.businesscardcontainer,
+.businesscardinformationcontainer {
+    display: flex;
+}
+
+.businesscardcontainer {
+    flex-direction: row;
+}
+
+.businesscardinformationcontainer {
+    flex-direction: column;
+    text-align: left;
+}
+
+.secondsectioncontainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.secondsectioncontainer div {
+    width: 22rem;
+}
+
+.directorylink {
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+
+@media screen and (min-width: 500px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    nav {
+        flex-direction: row;
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 27px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .card,
+    .card2 {
+        max-width: 100%;
+    }
+}
