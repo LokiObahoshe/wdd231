@@ -47,6 +47,7 @@ nav a:hover {
     background-color: var(--foreground);
     color: white;
     font-weight: 400;
+    transform: scale(1.1);
 }
 
 main {
@@ -75,6 +76,10 @@ footer {
 footer p {
     font-size: 17px;
     margin: 5px 0;
+}
+
+footer img:hover {
+    transform: scale(1.1);
 }
 
 #menu {
@@ -106,6 +111,7 @@ footer p {
 }
 
 .hero {
+    display: none;
     max-width: 100%;
     height: auto;
 }
@@ -138,7 +144,7 @@ footer p {
 .card3,
 .card2 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
@@ -187,6 +193,10 @@ footer p {
     cursor: default;
 }
 
+.card3 div:hover {
+    transform: scale(1.02);
+}
+
 
 @media screen and (min-width: 500px) {
 
@@ -204,6 +214,15 @@ footer p {
         padding: 10px;
         margin: 10px;
         font-size: 27px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .card2,
+    .card3 {
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     #menu {
