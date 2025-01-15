@@ -1,0 +1,18 @@
+{
+    "familyname": "John",
+    "moveindate": "10/5/2008",
+    "numberofpeople": 10,
+    "visitedbybishopric": false,
+    "familymembers": [
+        {
+            "name": "Lala John",
+            "gender": "female",
+            "birthdate": "6/24/1994"
+        },
+        {
+            "name": "Steve John",
+            "gender": "Male",
+            "birthdate": "12/25/1987"
+        }
+    ]
+}

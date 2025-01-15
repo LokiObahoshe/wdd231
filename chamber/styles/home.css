@@ -187,7 +187,7 @@ footer img:hover {
     width: 22rem;
 }
 
-.directorylink {
+.homelink {
     text-decoration: none;
     color: black;
     cursor: default;
@@ -198,7 +198,7 @@ footer img:hover {
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 320px) {
 
     header {
         flex-direction: row;
@@ -222,7 +222,7 @@ footer img:hover {
 
     .card2,
     .card3 {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #menu {
