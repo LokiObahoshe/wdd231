@@ -66,6 +66,10 @@ main {
     overflow: hidden;
 }
 
+img {
+    aspect-ratio: 16/9;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr;
@@ -74,6 +78,7 @@ footer {
     background-color: var(--background);
     text-align: center;
     padding: 10px;
+    min-height: 200px;
 }
 
 .footercontainer {
@@ -219,10 +224,7 @@ nav.open a.active {
 
 .businesscardcss img {
     max-width: 100%;
-    max-height: 250px;
-    width: auto;
-    height: auto;
-    padding: 10px;
+    object-fit: cover;
 }
 
 #displaybusinesses.grid {

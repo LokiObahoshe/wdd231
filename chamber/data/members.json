@@ -3,7 +3,7 @@
         "name": "3 Tequilas",
         "address": "25695 East 71st St So Broken Arrow 74012",
         "phonenumber": "918-286-6766",
-        "websiteURL": "www.3tequilas.com",
+        "websiteURL": "http://www.3tequilas.com",
         "image": "images/3tequilas.webp",
         "membershiplvl": "Gold"
     },
@@ -44,7 +44,7 @@
         "address": "2221 West Kenosha Broken Arrow 74012",
         "phonenumber": "918-258-0245",
         "websiteURL": "https://www.jackinthebox.com/",
-        "image": "images/jackinthebox.jpg",
+        "image": "images/jackinthebox.webp",
         "membershiplvl": "member"
     },
     {
@@ -60,7 +60,7 @@
         "address": "101 Bass Pro Dr Broken Arrow 74012",
         "phonenumber": "918-355-7600",
         "websiteURL": "https://stores.basspro.com/",
-        "image": "images/bassproshops.png",
+        "image": "images/bassproshops.webp",
         "membershiplvl": "gold"
     }
 ]

@@ -11,6 +11,9 @@ function businessCard(businessList) {
         businessImage.setAttribute('src', business.image);
         businessImage.setAttribute('alt', business.name);
         businessImage.setAttribute('loading', 'lazy');
+        businessImage.setAttribute('width', '100%');
+        businessImage.setAttribute('height', 'auto');
+
         businessCard.appendChild(businessImage);
 
         const businessName = document.createElement('h2');
@@ -26,7 +29,10 @@ function businessCard(businessList) {
         businessCard.appendChild(businessPhone);
 
         const businessUrl = document.createElement('a');
-        businessUrl.textContent = business.websiteURL;
+        const link = document.createTextNode(business.websiteURL);
+        businessUrl.appendChild(link)
+        businessUrl.title = business.websiteURL;
+        businessUrl.href = business.websiteURL;
         businessCard.appendChild(businessUrl);
 
         displayBusinesses.appendChild(businessCard);
