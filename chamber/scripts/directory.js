@@ -10,6 +10,7 @@ function businessCard(businessList) {
         const businessImage = document.createElement('img');
         businessImage.setAttribute('src', business.image);
         businessImage.setAttribute('alt', business.name);
+        businessImage.setAttribute('loading', 'lazy');
         businessCard.appendChild(businessImage);
 
         const businessName = document.createElement('h2');

@@ -53,6 +53,14 @@
         "phonenumber": "918-286-1777",
         "websiteURL": "https://hideawaypizza.com/",
         "image": "images/hideawaypizza.webp",
-        "membershiplvl": "member"
+        "membershiplvl": "silver"
+    },
+    {
+        "name": "Bass Pro Shops",
+        "address": "101 Bass Pro Dr Broken Arrow 74012",
+        "phonenumber": "918-355-7600",
+        "websiteURL": "https://stores.basspro.com/",
+        "image": "images/bassproshops.png",
+        "membershiplvl": "gold"
     }
 ]
