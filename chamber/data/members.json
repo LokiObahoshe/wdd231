@@ -1,8 +1,58 @@
-{
-    "name": "#",
-    "address": "#",
-    "phonenumber": 1,
-    "websiteURL": "#",
-    "image": "#",
-    "membershiplvl": "gold"
-}
+[
+    {
+        "name": "3 Tequilas",
+        "address": "25695 East 71st St So Broken Arrow 74012",
+        "phonenumber": "918-286-6766",
+        "websiteURL": "www.3tequilas.com",
+        "image": "images/3tequilas.webp",
+        "membershiplvl": "Gold"
+    },
+    {
+        "name": "Andolini's Pizza",
+        "address": "222 South Main Street Broken Arrow 74012",
+        "phonenumber": "918-940-2770",
+        "websiteURL": "http://www.andopizza.com",
+        "image": "images/andolinispizza.jpg",
+        "membershiplvl": "Silver"
+    },
+    {
+        "name": "Olive Garden",
+        "address": "1301 East Hillside Drive Broken Arrow 74012",
+        "phonenumber": "918-355-2738",
+        "websiteURL": "http://www.olivegarden.com",
+        "image": "images/olivegarden.webp",
+        "membershiplvl": "Member"
+    },
+    {
+        "name": "McDonald's",
+        "address": "1250 E. Albany Broken Arrow 74012",
+        "phonenumber": "918-355-0378",
+        "websiteURL": "https://www.mcdonalds.com/",
+        "image": "images/mcdonalds.png",
+        "membershiplvl": "silver"
+    },
+    {
+        "name": "Panda Express",
+        "address": "1314 East Hillside Drive Broken Arrow 74012",
+        "phonenumber": "918-355-0260",
+        "websiteURL": "https://www.pandaexpress.com/",
+        "image": "images/pandaexpress.webp",
+        "membershiplvl": "gold"
+    },
+    {
+        "name": "Jack In the Box",
+        "address": "2221 West Kenosha Broken Arrow 74012",
+        "phonenumber": "918-258-0245",
+        "websiteURL": "https://www.jackinthebox.com/",
+        "image": "images/jackinthebox.jpg",
+        "membershiplvl": "member"
+    },
+    {
+        "name": "Hideaway Pizza",
+        "address": "1150 North 9th Street Broken Arrow 74012",
+        "phonenumber": "918-286-1777",
+        "websiteURL": "https://hideawaypizza.com/",
+        "image": "images/hideawaypizza.webp",
+        "membershiplvl": "member"
+    }
+]

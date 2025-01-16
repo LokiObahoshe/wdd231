@@ -22,18 +22,25 @@ header {
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 0fr;
+    max-height: 0;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
     list-style: none;
     padding: 15px 0;
     margin: 0;
     align-items: center;
-    max-width: 50%;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+nav.open {
+    max-height: 500px;
+    padding: 15px 0;
 }
 
 nav a {
-    display: none;
+    display: block;
     color: black;
     text-align: center;
     padding: 1rem;
@@ -60,7 +67,7 @@ main {
 
 footer {
     display: grid;
-    grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
     background-color: var(--background);
@@ -74,7 +81,7 @@ footer {
 }
 
 footer p {
-    font-size: 17px;
+    font-size: 12px;
     margin: 5px 0;
 }
 
@@ -108,6 +115,14 @@ footer img:hover {
 .active {
     background-color: #6C6B93;
     color: white;
+}
+
+nav a.active {
+    background-color: transparent;
+}
+
+nav.open a.active {
+    background-color: #6C6B93;
 }
 
 .hero {
@@ -164,20 +179,6 @@ footer img:hover {
     text-align: center;
 }
 
-.businesscardcontainer,
-.businesscardinformationcontainer {
-    display: flex;
-}
-
-.businesscardcontainer {
-    flex-direction: row;
-}
-
-.businesscardinformationcontainer {
-    flex-direction: column;
-    text-align: left;
-}
-
 .secondsectioncontainer {
     display: flex;
     flex-direction: row;
@@ -197,23 +198,105 @@ footer img:hover {
     transform: scale(1.02);
 }
 
+.businesscardcss {
+    text-align: center;
+    width: 100%;
+    max-width: 260px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px gray;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-@media screen and (min-width: 320px) {
+.businesscardcss:hover {
+    transform: scale(1.01);
+}
+
+.businesscardcss img {
+    width: 200px;
+    height: auto;
+    padding: 10px;
+}
+
+#displaybusinesses.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+#displaybusinesses.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#displaybusinesses.list section img {
+    display: none;
+}
+
+#displaybusinesses.list section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0 auto;
+    border: 1px solid white;
+    background-color: #D9D9D9;
+    border: none;
+    box-shadow: none;
+}
+
+#displaybusinesses.list section:nth-child(even) {
+    background-color: var(--foreground);
+    color: white;
+}
+
+@media screen and (max-width: 320px) {
+    #displaybusinesses.grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 899px) {
+    #displaybusinesses.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    footer {
+        grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
 
     header {
         flex-direction: row;
     }
 
     nav {
-        flex-direction: row;
-        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-height: none;
+        padding: 0;
     }
 
     nav a {
-        display: block;
-        padding: 10px;
-        margin: 10px;
+        display: inline-block;
+        padding: 15px;
         font-size: 27px;
+    }
+
+    footer {
+        grid-template-columns: 0.3fr 0.3fr 0.3fr;
+    }
+
+    footer p {
+        font-size: 17px;
     }
 
     .hero {
@@ -232,5 +315,22 @@ footer img:hover {
     .card,
     .card2 {
         max-width: 100%;
+    }
+
+    nav a.active {
+        background-color: #6C6B93;
+    }
+
+    #displaybusinesses.grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .businesscardcss {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .businesscardcss img {
+        width: 250px;
     }
 }
