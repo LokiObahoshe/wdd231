@@ -13,7 +13,7 @@ function businessCard(businessList) {
         // This conditional statement was added to
         // reduce Largest Contentful Paint (LCP) that
         // was removing points in performance
-        if (index === 1) {
+        if (index === 0) {
             businessImage.removeAttribute('loading');
         } else {
             businessImage.setAttribute('loading', 'lazy');
@@ -69,6 +69,8 @@ const display = document.querySelector("#displaybusinesses");
 gridbutton.addEventListener("click", () => {
     display.classList.add("grid");
     display.classList.remove("list");
+    gridbutton.classList.add("active");
+    listbutton.classList.remove("active");
 });
 
 listbutton.addEventListener("click", showList);
@@ -76,4 +78,11 @@ listbutton.addEventListener("click", showList);
 function showList() {
     display.classList.add("list");
     display.classList.remove("grid");
+    listbutton.classList.add("active");
+    gridbutton.classList.remove("active");
 }
+
+window.addEventListener("load", () => {
+    gridbutton.classList.add("active");
+    listbutton.classList.remove("active");
+});

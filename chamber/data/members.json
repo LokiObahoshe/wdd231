@@ -12,7 +12,7 @@
         "address": "222 South Main Street Broken Arrow 74012",
         "phonenumber": "918-940-2770",
         "websiteURL": "http://www.andopizza.com",
-        "image": "images/andolinispizza.jpg",
+        "image": "images/andolinispizza.webp",
         "membershiplvl": "Silver"
     },
     {
@@ -28,7 +28,7 @@
         "address": "1250 E. Albany Broken Arrow 74012",
         "phonenumber": "918-355-0378",
         "websiteURL": "https://www.mcdonalds.com/",
-        "image": "images/mcdonalds.png",
+        "image": "images/mcdonalds.webp",
         "membershiplvl": "silver"
     },
     {

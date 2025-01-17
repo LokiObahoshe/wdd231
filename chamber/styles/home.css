@@ -35,7 +35,9 @@ nav {
 
 .navigation {
     max-width: 100%;
+    width: 50%;
     min-height: 100%;
+    height: 100%;
 }
 
 nav.open {
@@ -68,6 +70,7 @@ main {
     padding: 20px;
     max-width: 100%;
     overflow: hidden;
+    min-height: 80vh;
 }
 
 img {
@@ -83,6 +86,7 @@ footer {
     text-align: center;
     padding: 10px;
     min-height: 200px;
+    height: 300px;
 }
 
 .footercontainer {
@@ -93,6 +97,7 @@ footer {
 footer img {
     width: 40px;
     height: 40px;
+    object-fit: contain;
 }
 
 
@@ -217,12 +222,13 @@ nav.open a.active {
 .businesscardcss {
     text-align: center;
     width: 100%;
+    height: auto;
     max-width: 260px;
     margin: 10px auto;
     padding: 20px;
     border: 1px solid black;
     box-shadow: 0 5px 10px gray;
-    font-size: 10px;
+    font-size: 13px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,6 +275,27 @@ nav.open a.active {
     color: white;
 }
 
+.gridandlistmenu {
+    margin: 0 auto;
+}
+
+.gridandlistmenu button {
+    border: 2px solid var(--foreground);
+    background-color: white;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.gridandlistmenu button:hover {
+    transform: scale(1.1);
+}
+
+#grid.active,
+#list.active {
+    background-color: var(--foreground);
+    color: white;
+}
+
 @media screen and (max-width: 320px) {
     #displaybusinesses.grid {
         grid-template-columns: 1fr;
@@ -300,6 +327,7 @@ nav.open a.active {
 
     footer {
         grid-template-columns: 0.3fr 0.3fr 0.3fr;
+        height: 200px;
     }
 
     footer p {
@@ -351,6 +379,7 @@ nav.open a.active {
 
     footer {
         grid-template-columns: 0.3fr 0.3fr 0.3fr;
+        height: 100px;
     }
 
     footer p {
