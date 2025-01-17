@@ -3,14 +3,21 @@ function businessCard(businessList) {
     const displayBusinesses = document.getElementById('displaybusinesses');
     displayBusinesses.innerHTML = '';
 
-    businessList.forEach(business => {
+    businessList.forEach((business, index) => {
         const businessCard = document.createElement('section');
         businessCard.classList.add('businesscardcss');
 
         const businessImage = document.createElement('img');
         businessImage.setAttribute('src', business.image);
         businessImage.setAttribute('alt', business.name);
-        businessImage.setAttribute('loading', 'lazy');
+        // This conditional statement was added to
+        // reduce Largest Contentful Paint (LCP) that
+        // was removing points in performance
+        if (index === 1) {
+            businessImage.removeAttribute('loading');
+        } else {
+            businessImage.setAttribute('loading', 'lazy');
+        }
         businessImage.setAttribute('width', '100%');
         businessImage.setAttribute('height', 'auto');
 
