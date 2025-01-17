@@ -286,6 +286,14 @@ footer img:hover {
     color: white;
 }
 
+#displaybusinesses.list section:nth-child(even) a {
+    color: white;
+}
+
+#displaybusinesses.list section:nth-child(odd) a {
+    color: black;
+}
+
 .gridandlistmenu {
     margin: 0 auto;
 }
