@@ -41,25 +41,53 @@
 
     <main class="homecontainer">
         <section class="card">
-            <img class="hero" src="images/hero.jpg" alt="hero image" loading="lazy">
+            <img class="hero" src="images/hero.webp" alt="hero image" loading="lazy">
+            <div class="CTA">
+                <a href="#">Join the Chamber of Commerce now!</a>
+            </div>
         </section>
 
         <div class="secondsectioncontainer">
             <section class="card2">
                 <div>
-                    <p>Events</p>
+                    <h2>Events</h2>
                 </div>
             </section>
 
             <section class="card2">
                 <div>
-                    <p>Current Weather</p>
+                    <h2>Current Weather</h2>
+                    <div class="currentweathercontainer">
+                        <figure>
+                            <img id="weather-icon" src="#" alt="#">
+                        </figure>
+                        <div>
+                            <p><b><span id="current-temp">0°F</span></b></p>
+                            <p><span id="desc">#</span></p>
+                            <p>High: <span id="max-temp">0°F</span></p>
+                            <p>Low: <span id="min-temp">0°F</span></p>
+                            <p>Humidity: <span id="humidity">0%</span></p>
+                            <p>Sunrise: <span id="sunrise">0:00am</span></p>
+                            <p>Sunset: <span id="sunset">0:00pm</span></p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="card2">
                 <div>
-                    <p>Weather Forecast</p>
+                    <h2>Weather Forecast</h2>
+                    <div id="forecast">
+                        <div id="day1">
+                            <p><span id="day1-weekday">Monday</span> <b><span id="day1-temp">0°F</span></b></p>
+                        </div>
+                        <div id="day2">
+                            <p><span id="day2-weekday">Monday</span> <b><span id="day2-temp">0°F</span></b></p>
+                        </div>
+                        <div id="day3">
+                            <p><span id="day3-weekday">Monday</span> <b><span id="day3-temp">0°F</span></b></p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -133,7 +161,7 @@
             <p>WDD231 Class Project</p>
             <p>Rebecca Sonderegger</p>
             <p>&copy;2025 Timbuktu Chamber of Commerce</p>
-            <p>Last Modification: <span id="lastModified"></span> </p>
+            <p>Last Modification: <span id="lastModified">January 1, 2025</span> </p>
         </div>
     </footer>
 </body>
