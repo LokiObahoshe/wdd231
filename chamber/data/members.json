@@ -6,7 +6,7 @@
         "websiteURL": "http://www.3tequilas.com",
         "image": "images/3tequilas.webp",
         "tagLine": "Three Times the Fun!",
-        "membershiplvl": "Gold"
+        "membershiplvl": "gold"
     },
     {
         "name": "Andolini's Pizza",
@@ -15,7 +15,7 @@
         "websiteURL": "http://www.andopizza.com",
         "image": "images/andolinispizza.webp",
         "tagLine": "A Slice Above.",
-        "membershiplvl": "Silver"
+        "membershiplvl": "silver"
     },
     {
         "name": "Olive Garden",
@@ -24,7 +24,7 @@
         "websiteURL": "http://www.olivegarden.com",
         "image": "images/olivegarden.webp",
         "tagLine": "When You're Here, You're Family.",
-        "membershiplvl": "Member"
+        "membershiplvl": "sliver"
     },
     {
         "name": "McDonald's",
@@ -51,7 +51,7 @@
         "websiteURL": "https://www.jackinthebox.com/",
         "image": "images/jackinthebox.webp",
         "tagLine": "Jack's Way.",
-        "membershiplvl": "member"
+        "membershiplvl": "gold"
     },
     {
         "name": "Hideaway Pizza",

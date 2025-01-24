@@ -173,6 +173,14 @@ footer img:hover {
     max-width: 300px;
 }
 
+.card2 h2 {
+    margin: 0 0 20px 0;
+    padding: 15px;
+    background-color: var(--foreground);
+    color: white;
+    width: 100%;
+}
+
 .card {
     margin: 0 auto;
 }
@@ -181,6 +189,7 @@ footer img:hover {
 .card3 p {
     flex-grow: 1;
     font-size: 17px;
+    margin: 14px;
 }
 
 .card2 {
@@ -255,10 +264,6 @@ footer img:hover {
     aspect-ratio: 1;
     width: 80px;
     height: 80px;
-}
-
-.card2 h2 {
-    margin-bottom: 30px;
 }
 
 /* Directory page class / id selectors */
@@ -351,6 +356,11 @@ footer img:hover {
 
 /* Medium Screen Size */
 @media screen and (min-width: 480px) {
+
+    .secondsectioncontainer {
+        flex-direction: column;
+    }
+
     footer {
         grid-template-columns: 0.3fr 0.3fr 0.3fr;
         height: 200px;
@@ -370,10 +380,6 @@ footer img:hover {
     }
 
     #displaybusinesses.list section {
-        flex-direction: row;
-    }
-
-    .secondsectioncontainer {
         flex-direction: row;
     }
 
@@ -401,13 +407,15 @@ footer img:hover {
         max-width: 100%;
     }
 
-    .card2 div {
-        width: 100%;
-    }
-
     .CTA {
         width: 30%;
         left: 80%;
+    }
+
+    .card2 div {
+        width: 100%;
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -445,10 +453,6 @@ footer img:hover {
     footer img {
         width: 60px;
         height: 60px;
-    }
-
-    .card2 {
-        grid-template-columns: repeat(3, 1fr);
     }
 
     #menu {

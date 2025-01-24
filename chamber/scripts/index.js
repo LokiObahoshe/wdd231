@@ -66,11 +66,11 @@ async function apiFetch() {
 }
 
 // This function converts the Unix time of
-// sunrise and sunset into hours and minutes in UTC
+// sunrise and sunset into hours
 function formatTime(timestamp) {
     const date = new Date(timestamp * 1000);
-    const hours = date.getUTCHours();
-    const minutes = date.getUTCMinutes();
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
     const period = hours >= 12 ? 'PM' : 'AM';
     const formattedHours = hours % 12 || 12;
     const formattedMinutes = minutes < 10 ? `0${minutes}` : minutes;
@@ -96,7 +96,7 @@ function displayResults(data) {
 function getDayOfWeek(timestamp) {
     const date = new Date(timestamp * 1000);
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-    return daysOfWeek[date.getUTCDay()];
+    return daysOfWeek[date.getDay()];
 }
 
 
@@ -184,6 +184,10 @@ function businessCard(businessList) {
         businessUrl.title = business.websiteURL;
         businessUrl.href = business.websiteURL;
         businessCard.appendChild(businessUrl);
+
+        const businessMember = document.createElement('p');
+        businessMember.textContent = `Membership Lvl: ${business.membershiplvl}`;
+        businessCard.appendChild(businessMember);
 
         displayBusinesses.appendChild(businessCard);
     });
