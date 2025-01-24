@@ -5,6 +5,7 @@
         "phonenumber": "918-286-6766",
         "websiteURL": "http://www.3tequilas.com",
         "image": "images/3tequilas.webp",
+        "tagLine": "Three Times the Fun!",
         "membershiplvl": "Gold"
     },
     {
@@ -13,6 +14,7 @@
         "phonenumber": "918-940-2770",
         "websiteURL": "http://www.andopizza.com",
         "image": "images/andolinispizza.webp",
+        "tagLine": "A Slice Above.",
         "membershiplvl": "Silver"
     },
     {
@@ -21,6 +23,7 @@
         "phonenumber": "918-355-2738",
         "websiteURL": "http://www.olivegarden.com",
         "image": "images/olivegarden.webp",
+        "tagLine": "When You're Here, You're Family.",
         "membershiplvl": "Member"
     },
     {
@@ -29,6 +32,7 @@
         "phonenumber": "918-355-0378",
         "websiteURL": "https://www.mcdonalds.com/",
         "image": "images/mcdonalds.webp",
+        "tagLine": "I'm Lovin' It.",
         "membershiplvl": "silver"
     },
     {
@@ -37,6 +41,7 @@
         "phonenumber": "918-355-0260",
         "websiteURL": "https://www.pandaexpress.com/",
         "image": "images/pandaexpress.webp",
+        "tagLine": "Gourmet Chinese Food.",
         "membershiplvl": "gold"
     },
     {
@@ -45,6 +50,7 @@
         "phonenumber": "918-258-0245",
         "websiteURL": "https://www.jackinthebox.com/",
         "image": "images/jackinthebox.webp",
+        "tagLine": "Jack's Way.",
         "membershiplvl": "member"
     },
     {
@@ -53,6 +59,7 @@
         "phonenumber": "918-286-1777",
         "websiteURL": "https://hideawaypizza.com/",
         "image": "images/hideawaypizza.webp",
+        "tagLine": "The Best Pizza in the World!",
         "membershiplvl": "silver"
     },
     {
@@ -61,6 +68,7 @@
         "phonenumber": "918-355-7600",
         "websiteURL": "https://stores.basspro.com/",
         "image": "images/bassproshops.webp",
+        "tagLine": "Your Adventure Starts Here.",
         "membershiplvl": "gold"
     }
 ]

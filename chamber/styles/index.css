@@ -154,25 +154,27 @@ footer img:hover {
 /* Index page class / id selectors */
 
 .hero {
-    display: none;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 3.2;
 }
 
-.card3 div {
-    background-color: var(--foreground);
-    color: white;
+.herocontainer {
+    position: relative;
 }
 
-.card,
 .card2 {
     background-color: white;
     height: 100%;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     max-width: 300px;
+}
+
+.card {
+    margin: 0 auto;
 }
 
 .card2 p,
@@ -181,7 +183,6 @@ footer img:hover {
     font-size: 17px;
 }
 
-.card3,
 .card2 {
     display: grid;
     grid-template-columns: 1fr;
@@ -198,28 +199,20 @@ footer img:hover {
     margin-bottom: 20px;
 }
 
-.card3 img {
-    padding: 15px;
-}
-
 .CTA {
     display: flex;
-    position: relative;
-    bottom: 650px;
-    left: 40px;
+    position: absolute;
+    top: 90%;
+    left: 75%;
+    transform: translate(-50%, -50%);
     background-color: var(--foreground);
     border: 2px solid black;
     box-shadow: 0 5px 10px gray;
-    width: 20%;
-    height: 10%;
-    justify-content: center;
-    align-items: center;
+    padding: 10px 20px;
+    width: 40%;
     text-align: center;
-    font-size: 20px;
-}
-
-.CTA:hover {
-    transform: scale(1.05);
+    font-size: 15px;
+    color: white;
 }
 
 .CTA a {
@@ -245,6 +238,7 @@ footer img:hover {
 
 .secondsectioncontainer div {
     width: 15rem;
+    height: auto;
 }
 
 .homelink {
@@ -253,8 +247,18 @@ footer img:hover {
     cursor: default;
 }
 
-.card3 div:hover {
-    transform: scale(1.02);
+.eventscontainer p {
+    width: 80%;
+}
+
+#weather-icon {
+    aspect-ratio: 1;
+    width: 80px;
+    height: 80px;
+}
+
+.card2 h2 {
+    margin-bottom: 30px;
 }
 
 /* Directory page class / id selectors */
@@ -283,7 +287,8 @@ footer img:hover {
     object-fit: cover;
 }
 
-#displaybusinesses.grid {
+#displaybusinesses.grid,
+.homebusinessdisplay {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -346,28 +351,6 @@ footer img:hover {
 
 /* Medium Screen Size */
 @media screen and (min-width: 480px) {
-    #displaybusinesses.grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    header {
-        flex-direction: row;
-    }
-
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-height: none;
-        padding: 0;
-    }
-
-    nav a {
-        display: inline-block;
-        padding: 15px;
-        font-size: 27px;
-    }
-
     footer {
         grid-template-columns: 0.3fr 0.3fr 0.3fr;
         height: 200px;
@@ -382,16 +365,49 @@ footer img:hover {
         height: 50px;
     }
 
-    #menu {
-        display: none;
-    }
-
     .businesscardcss {
         max-width: 800px;
     }
 
     #displaybusinesses.list section {
         flex-direction: row;
+    }
+
+    .secondsectioncontainer {
+        flex-direction: row;
+    }
+
+    .secondsectioncontainer div {
+        width: 15rem;
+        height: auto;
+    }
+
+    #displaybusinesses.grid,
+    .homebusinessdisplay {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .homebusinessdisplay {
+        margin: 0 auto;
+        width: 60%;
+    }
+
+    .hero {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card2 div {
+        width: 100%;
+    }
+
+    .CTA {
+        width: 30%;
+        left: 80%;
     }
 }
 
@@ -431,12 +447,7 @@ footer img:hover {
         height: 60px;
     }
 
-    .hero {
-        display: block;
-    }
-
-    .card2,
-    .card3 {
+    .card2 {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -457,10 +468,6 @@ footer img:hover {
         flex-direction: row;
     }
 
-    .card2 h2 {
-        margin-bottom: 30px;
-    }
-
     .currentweathercontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -469,10 +476,17 @@ footer img:hover {
 
     .secondsectioncontainer div {
         width: 24rem;
+        height: auto;
     }
 
-    #displaybusinesses.grid {
+    #displaybusinesses.grid,
+    .homebusinessdisplay {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .homebusinessdisplay {
+        width: 60%;
+        margin: 0 auto;
     }
 
     #displaybusinesses.list section {
@@ -486,5 +500,15 @@ footer img:hover {
 
     .businesscardcss img {
         width: 250px;
+    }
+
+    .hero {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .CTA {
+        width: 25%;
+        left: 85%;
     }
 }

@@ -33,8 +33,8 @@ const day1Weekday = document.querySelector('#day1-weekday');
 const day2Weekday = document.querySelector('#day2-weekday');
 const day3Weekday = document.querySelector('#day3-weekday');
 
-const longitude = "16.76"
-const latitude = "-3.00"
+const longitude = "-95.80"
+const latitude = "36.06"
 const apiKey = "2271c043bc3412f35086a93ea1745b8f"
 
 const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&units=imperial&appid=${apiKey}`;
@@ -127,4 +127,80 @@ function displayForecast(data) {
     });
 }
 
+//Shuffle businesses
+
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
+// Display Businesses
+function businessCard(businessList) {
+    const displayBusinesses = document.getElementById('displaybusinesses');
+    displayBusinesses.innerHTML = '';
+
+    shuffleArray(businessList);
+
+    const limitedBusinessList = businessList.slice(0, 3);
+
+    limitedBusinessList.forEach((business, index) => {
+        const businessCard = document.createElement('section');
+        businessCard.classList.add('businesscardcss');
+
+        const businessName = document.createElement('h2');
+        businessName.textContent = business.name;
+        businessCard.appendChild(businessName);
+
+        const businessTagLine = document.createElement('p');
+        businessTagLine.textContent = business.tagLine;
+        businessCard.appendChild(businessTagLine);
+
+        const businessImage = document.createElement('img');
+        businessImage.setAttribute('src', business.image);
+        businessImage.setAttribute('alt', business.name);
+
+        // This conditional statement was added to
+        // reduce Largest Contentful Paint (LCP) that
+        // was removing points in performance
+        if (index === 0) {
+            businessImage.removeAttribute('loading');
+        } else {
+            businessImage.setAttribute('loading', 'lazy');
+        }
+        businessImage.setAttribute('width', '100%');
+        businessImage.setAttribute('height', 'auto');
+
+        businessCard.appendChild(businessImage);
+
+        const businessPhone = document.createElement('p');
+        businessPhone.textContent = business.phonenumber;
+        businessCard.appendChild(businessPhone);
+
+        const businessUrl = document.createElement('a');
+        const link = document.createTextNode(business.websiteURL);
+        businessUrl.appendChild(link)
+        businessUrl.title = business.websiteURL;
+        businessUrl.href = business.websiteURL;
+        businessCard.appendChild(businessUrl);
+
+        displayBusinesses.appendChild(businessCard);
+    });
+}
+
+async function loadBusinesses() {
+    try {
+        const response = await fetch('./data/members.json');
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        businessCard(data);
+    } catch (error) {
+        console.error('Error loading members.json:', error);
+    }
+}
+
+loadBusinesses();
 apiFetch();

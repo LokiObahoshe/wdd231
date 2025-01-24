@@ -11,7 +11,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamber of Commerce - Home Page">
     <meta property="og:url" content="https://lokiobahoshe.github.io/wdd231/chamber/home.html">
-    <meta property="og:image" content="https://lokiobahoshe.github.io/wdd231/chamber/images/metaimage.webp">
+    <meta property="og:image" content="https://lokiobahoshe.github.io/wdd231/chamber/images/hero.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,14 +19,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/home.js" defer></script>
+    <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
     <header>
         <div>
-            <a class="homelink" href="home.html">
-                <h1>Timbuktu</h1>
+            <a class="homelink" href="index.html">
+                <h1>Broken Arrow</h1>
                 <p>Chamber of Commerce</p>
             </a>
         </div>
@@ -41,16 +41,24 @@
 
     <main class="homecontainer">
         <section class="card">
-            <img class="hero" src="images/hero.webp" alt="hero image" loading="lazy">
-            <div class="CTA">
-                <a href="#">Join the Chamber of Commerce now!</a>
+            <div class="herocontainer">
+                <img class="hero" src="images/hero.webp" alt="hero image">
+                <div class="CTA">
+                    <a href="#">Join the Chamber of Commerce now!</a>
+                </div>
             </div>
         </section>
 
+        <h1>Home</h1>
         <div class="secondsectioncontainer">
             <section class="card2">
                 <div>
                     <h2>Events</h2>
+                    <div class="eventscontainer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laudantium aliquid delectus
+                            soluta nam vitae in, tenetur sapiente facere eius. Magni iste saepe fuga placeat ratione
+                            deserunt a nihil dicta.</p>
+                    </div>
                 </div>
             </section>
 
@@ -93,58 +101,17 @@
         </div>
 
         <section class="card3">
-            <div class="profilecard">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <hr>
-                <br>
-                <div class="profilecardcontainer">
-                    <img src="images/businesscarduser.jpg" alt="business card1" width="150" height="150" loading="lazy">
-                    <div>
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="profilecard">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <hr>
-                <br>
-                <div class="profilecardcontainer">
-                    <img src="images/businesscarduser.jpg" alt="business card1" width="150" height="150" loading="lazy">
-                    <div>
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="profilecard">
-                <h2>Business Name</h2>
-                <p>Business Tag Line</p>
-                <hr>
-                <br>
-                <div class="profilecardcontainer">
-                    <img src="images/businesscarduser.jpg" alt="business card1" width="150" height="150" loading="lazy">
-                    <div>
-                        <p><strong>EMAIL:</strong> info@gmail.com</p>
-                        <p><strong>PHONE:</strong> 800-555-1234</p>
-                        <p><strong>URL:</strong> mybusiness.com</p>
-                    </div>
-                </div>
-            </div>
+            <section class="homebusinessdisplay" id="displaybusinesses"></section>
         </section>
 
     </main>
 
     <footer>
         <div class="footercontainer">
-            <p>Timbuktu Chamber of Commerce</p>
+            <p>Broken Arrow Chamber of Commerce</p>
             <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
+            <p>Broken Arrow, Oklahoma 999</p>
+            <p>info@brokenarrow.org</p>
             <p>(223) 555-2300</p>
         </div>
 
@@ -160,7 +127,7 @@
         <div class="footercontainer">
             <p>WDD231 Class Project</p>
             <p>Rebecca Sonderegger</p>
-            <p>&copy;2025 Timbuktu Chamber of Commerce</p>
+            <p>&copy;2025 Broken Arrow Chamber of Commerce</p>
             <p>Last Modification: <span id="lastModified">January 1, 2025</span> </p>
         </div>
     </footer>
