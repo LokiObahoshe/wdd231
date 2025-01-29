@@ -92,10 +92,17 @@ function displayCourses(courseArray) {
     // This is what displays the courses
     courseArray.forEach(course => {
         const courseDiv = document.createElement('div');
+        courseDiv.classList.add('fundamentalsDiv');
         const ifCompleted = course.completed ? 'completed' : 'incomplete';
         courseDiv.classList.add(ifCompleted);
 
         courseDiv.innerHTML = `<h2>${course.subject} ${course.number}</h2>`;
+
+        // Added for dialog to work
+        courseDiv.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         courseListContainer.appendChild(courseDiv);
     });
 
@@ -136,3 +143,24 @@ hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
 });
+
+//Dialog Trigger
+function displayCourseDetails(course) {
+    const courseDetails = document.getElementById('course-details');
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}

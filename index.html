@@ -25,7 +25,7 @@
 <body>
     <header>
         <div class="headernameandimg">
-            <img src="images/profile.webp" alt="profile image">
+            <img class="pfp" src="images/profile.webp" alt="profile image">
             <h1>Rebecca Sonderegger</h1>
         </div>
         <nav class="navigation">
@@ -38,7 +38,7 @@
 
     <main>
         <section class="card">
-            <button id="menu" aria-label="Open menu"></button>
+            <button class="indexbutton" id="menu" aria-label="Open menu"></button>
             <h2 class="cardh2design">Course Work</h2>
             <div>
                 <ul>
@@ -62,10 +62,11 @@
 
         <section class="card thirdsection">
             <h2 class="cardh2design">Web and Computer Programming Certificate</h2>
+            <dialog id="course-details"></dialog>
             <div>
-                <button id="allCoursesButton">All</button>
-                <button id="wddCoursesButton">WDD</button>
-                <button id="cseCoursesButton">CSE</button>
+                <button class="indexbutton" id="allCoursesButton">All</button>
+                <button class="indexbutton" id="wddCoursesButton">WDD</button>
+                <button class="indexbutton" id="cseCoursesButton">CSE</button>
             </div>
             <hr>
             <div id="courseList"></div>
