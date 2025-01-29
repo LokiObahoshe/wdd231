@@ -206,5 +206,7 @@ async function loadBusinesses() {
     }
 }
 
-loadBusinesses();
-apiFetch();
+if (window.location.pathname.includes('index.html')) {
+    loadBusinesses();
+    apiFetch();
+};

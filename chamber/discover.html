@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Directory Page</title>
+    <title>Chamber of Commerce - Discover Page</title>
     <meta name="author" content="Rebecca Sonderegger">
     <link rel="icon" href="images/favicon.ico">
-    <meta name="description" content="Chamber of Commerce Directory Page">
+    <meta name="description" content="Chamber of Commerce Discover Page">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Chamber of Commerce - Directory Page">
-    <meta property="og:url" content="https://lokiobahoshe.github.io/wdd231/chamber/directory.html">
+    <meta property="og:title" content="Chamber of Commerce - Discover Page">
+    <meta property="og:url" content="https://lokiobahoshe.github.io/wdd231/chamber/index.html">
     <meta property="og:image" content="https://lokiobahoshe.github.io/wdd231/chamber/images/hero.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <script src="scripts/index.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
 </head>
 
 <body>
@@ -34,18 +34,14 @@
         <button id="menu" aria-label="Open menu"></button>
         <nav class="navigation">
             <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
-            <a href=" join.html">Join</a>
-            <a href=" discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html" class="active">Discover</a>
         </nav>
     </header>
 
-    <main class="directorycontainer">
-        <div class="gridandlistmenu">
-            <button id="grid">☷</button>
-            <button id="list"> ☰ </button>
-        </div>
-        <section class="grid" id="displaybusinesses"></section>
+    <main class="discovercontainer">
+        <h2>W.I.P</h2>
     </main>
 
     <footer>
@@ -58,18 +54,19 @@
         </div>
 
         <div>
-            <a href="https://www.youtube.com/"><img src="images/youtube.webp" alt="YouTube Link" width="40"
-                    height="40"></a>
-            <a href="https://x.com/"><img src="images/twitter.webp" alt="Twitter Link" width="40" height="40"></a>
+            <a href="https://www.youtube.com/"><img src="images/youtube.webp" alt="YouTube Link" width="40" height="40"
+                    loading="lazy"></a>
+            <a href="https://x.com/"><img src="images/twitter.webp" alt="Twitter Link" width="40" height="40"
+                    loading="lazy"></a>
             <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn Link" width="40"
-                    height="40"></a>
+                    height="40" loading="lazy"></a>
         </div>
 
         <div class="footercontainer">
             <p>WDD231 Class Project</p>
             <p>Rebecca Sonderegger</p>
-            <p>&copy;2025 Timbuktu Chamber of Commerce</p>
-            <p>Last Modification: <span id="lastModified">January 1, 2025</span></p>
+            <p>&copy;2025 Broken Arrow Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified">January 1, 2025</span> </p>
         </div>
     </footer>
 </body>

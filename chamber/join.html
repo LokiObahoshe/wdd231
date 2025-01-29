@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Join Page</title>
+    <meta name="author" content="Rebecca Sonderegger">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Chamber of Commerce - Join Page">
+    <meta property="og:url" content="https://lokiobahoshe.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://lokiobahoshe.github.io/wdd231/chamber/images/hero.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a class="homelink" href="index.html">
+                <h1>Broken Arrow</h1>
+                <p>Chamber of Commerce</p>
+            </a>
+        </div>
+        <button id="menu" aria-label="Open menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+
+    <main class="joincontainer">
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                    title="Your Last Name"></label>
+            <label>Title <input type="text" name="title" required autocomplete="organization-title"
+                    title="Your Organizational Title"></label>
+            <label>Email <input type="email" name="email" required placeholder="email@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel"
+                    title="A Phone Number with dashes" placeholder="555-555-5555"></label>
+            <label>Organization <input type="text" name="organizationname" required autocomplete="organization"
+                    title="Name for Organization or Business"></label>
+
+
+            <h3>Membership Level</h3>
+            <label><input type="radio" name="membership" value="NP Membership is for non profit
+                organizations and there is no fee" checked> NP Membership is for non profit
+                organizations and there is no fee</label>
+            <label><input type="radio" name="membership" value="Bronze Membership"> Bronze Membership</label>
+            <label><input type="radio" name="membership" value="Silver Membership"> Silver Membership</label>
+            <label><input type="radio" name="membership" value="Gold Membership"> Gold Membership</label>
+
+
+            <h3>Organization/Business Description</h3>
+            <label>Description <input type="textarea" name="organizationdesc"
+                    title="Description for Organization or Business" placeholder="Text Here"></label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+
+            <input type="submit" value="Apply for Membership">
+        </form>
+    </main>
+
+    <footer>
+        <div class="footercontainer">
+            <p>Broken Arrow Chamber of Commerce</p>
+            <p>City Hall 220 S First Street Broken Arrow</p>
+            <p>Broken Arrow, Oklahoma 999</p>
+            <p>info@brokenarrow.org</p>
+            <p>(555) 555-5555</p>
+        </div>
+
+        <div>
+            <a href="https://www.youtube.com/"><img src="images/youtube.webp" alt="YouTube Link" width="40" height="40"
+                    loading="lazy"></a>
+            <a href="https://x.com/"><img src="images/twitter.webp" alt="Twitter Link" width="40" height="40"
+                    loading="lazy"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.webp" alt="LinkedIn Link" width="40"
+                    height="40" loading="lazy"></a>
+        </div>
+
+        <div class="footercontainer">
+            <p>WDD231 Class Project</p>
+            <p>Rebecca Sonderegger</p>
+            <p>&copy;2025 Broken Arrow Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified">January 1, 2025</span> </p>
+        </div>
+    </footer>
+</body>
+
+</html>
