@@ -206,5 +206,6 @@ async function loadBusinesses() {
     }
 }
 
+
 loadBusinesses();
 apiFetch();
