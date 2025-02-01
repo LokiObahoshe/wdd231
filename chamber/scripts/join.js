@@ -57,12 +57,11 @@ if (window.location.href.includes('thankyou.html')) {
         const showInfo = document.querySelector('#results');
         showInfo.innerHTML = `
             <h2>Submitted User Information:</h2>
-            <p>Appointment for ${show("first")} ${show("last")}</p>
-            <p>Title: ${show("title")}</p>
+            <p>First Name: ${show("first")}</p>
+            <p>Last Name: ${show("last")}</p>
             <p>Your Email: <a href="mailto:${show("email")}">${show("email")}</a></p>
             <p>Your Phone: ${show("phone")}</p>
             <p>Organization: ${show("organizationname")}</p>
-            <p>Membership Level: ${show("membership")}</p>
             <p>TimeStamp: ${formattedTimestamp}</p>
         `;
     }

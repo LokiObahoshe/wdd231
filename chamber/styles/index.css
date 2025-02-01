@@ -396,6 +396,11 @@ select {
     width: 250px;
 }
 
+input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
 textarea {
     width: 100%;
 }
@@ -427,11 +432,13 @@ input[type=submit] {
 }
 
 #results {
+    margin: 0 auto;
     background-color: var(--foreground);
     color: white;
     padding: 0 1rem;
     border: 3px solid var(--background);
     border-radius: 6px;
+    width: 100%;
 }
 
 #results a {
@@ -461,8 +468,10 @@ input[type=submit] {
     margin: 10px auto;
     width: 80%;
     height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: var(--background);
     animation: animation 0.7s ease-out;
 }
@@ -481,8 +490,10 @@ input[type=submit] {
     }
 }
 
-.joinsection2 button {
+.joinsection2 button,
+.joinsection2 p {
     padding: 10px;
+    border: none;
 }
 
 #nonprofitmembership,
@@ -608,6 +619,12 @@ dialog h2 {
         margin: 0;
         padding: 0;
     }
+
+    /* ---------------------------join.html / thankyou.html----------------------------- */
+
+    #results {
+        width: 50%;
+    }
 }
 
 /* ---------------------------Large Screen Size----------------------------- */
@@ -721,5 +738,9 @@ dialog h2 {
 
     .joinsection2 div {
         width: 70%;
+    }
+
+    #results {
+        width: 50%;
     }
 }
