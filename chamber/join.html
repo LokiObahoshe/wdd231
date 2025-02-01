@@ -46,8 +46,8 @@
                         title="Your First Name"></label>
                 <label>Last Name* <input type="text" name="last" required autocomplete="family-name"
                         title="Your Last Name"></label>
-                <label>Title <input type="text" name="title" autocomplete="organization-title"
-                        title="Your Organizational Title"></label>
+                <label>Title <input type="text" name="title" pattern="[a-zA-Z\s\-].{7,}"
+                        autocomplete="organization-title" title="Your Organizational Title"></label>
                 <label>Email* <input type="email" name="email" required placeholder="email@gmail.com" title="Your Email"
                         autocomplete="email"></label>
                 <label>Cell Phone* <input type="tel" name="phone" required autocomplete="tel"

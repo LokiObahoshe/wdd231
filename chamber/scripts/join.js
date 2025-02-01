@@ -72,12 +72,12 @@ if (window.location.href.includes('thankyou.html')) {
 //Dialog Trigger
 const courseDetails = document.getElementById('course-details');
 
-function showMembershipDetails(membershipType) {
+function showMembershipDetails(membershipType, content) {
     courseDetails.innerHTML = `
-            <button id="closeModal">❌</button>
-            <h2>${membershipType} Membership Details</h2>
-            <p>Learn about the benefits and features of the ${membershipType} membership level.</p>
-        `;
+        <button id="closeModal">❌</button>
+        <h2>${membershipType} Membership Level</h2>
+        ${content}
+    `;
     courseDetails.showModal();
 
     const closeModal = document.getElementById('closeModal');
@@ -86,9 +86,54 @@ function showMembershipDetails(membershipType) {
     });
 }
 
+// This const is used to organize the membership level dialog pop-ups
+// and to make things more "readable" for me
+const membershipContent = {
+    'Non-Profit': `
+    <ul>
+        <li>Free For Non-Profit Business and Organizations</li>
+        <li>Quarterly Newsletter</li>
+        <li>Training Sessions</li>
+    </ul>
+    <p><b>Free</b></p>
+    `,
+    'Bronze': `
+    <ul>
+        <li>Bronze Membership</li>
+        <li>Access to Special Events</li>
+        <li>Quarterly Newsletter</li>
+        <li>Training Sessions</li>
+        <li>Discounts on Advertising</li>
+    </ul>
+        <p><b>$10.00 Monthly</b></p>
+    `,
+    'Silver': `
+    <ul>
+        <li>Access to Special Events</li>
+        <li>Quarterly Newsletter</li>
+        <li>Training Sessions</li>
+        <li>Discounts on Advertising</li>
+        <li>Priority Tech Support</li>
+    </ul>
+        <p><b>$15.00 Monthly</b></p>
+    `,
+    'Gold': `
+    <ul>
+        <li>Access to Special Events</li>
+        <li>Quarterly Newsletter</li>
+        <li>Training Sessions</li>
+        <li>Discounts on Advertising</li>
+        <li>Priority Tech Support</li>
+        <li>VIP Tech Support</li>
+        <li>Personal Advertising Manager</li>
+    </ul>
+        <p><b>$20.00 Monthly</b></p>
+    `
+};
+
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('nonprofitmembership').addEventListener('click', () => showMembershipDetails('Non-Profit'));
-    document.getElementById('bronzemembership').addEventListener('click', () => showMembershipDetails('Bronze'));
-    document.getElementById('silvermembership').addEventListener('click', () => showMembershipDetails('Silver'));
-    document.getElementById('goldmembership').addEventListener('click', () => showMembershipDetails('Gold'));
+    document.getElementById('nonprofitmembership').addEventListener('click', () => showMembershipDetails('Non-Profit', membershipContent['Non-Profit']));
+    document.getElementById('bronzemembership').addEventListener('click', () => showMembershipDetails('Bronze', membershipContent['Bronze']));
+    document.getElementById('silvermembership').addEventListener('click', () => showMembershipDetails('Silver', membershipContent['Silver']));
+    document.getElementById('goldmembership').addEventListener('click', () => showMembershipDetails('Gold', membershipContent['Gold']));
 });
