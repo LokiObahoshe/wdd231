@@ -28,7 +28,7 @@ if (window.location.href.includes('thankyou.html')) {
     const everything = currentUrl.split('?');
     if (everything.length > 1) {
         let formData = everything[1].split('&');
-        console.log(formData);
+        //console.log(formData);
 
         function show(info) {
             let result = '';
@@ -130,9 +130,11 @@ const membershipContent = {
     `
 };
 
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('nonprofitmembership').addEventListener('click', () => showMembershipDetails('Non-Profit', membershipContent['Non-Profit']));
-    document.getElementById('bronzemembership').addEventListener('click', () => showMembershipDetails('Bronze', membershipContent['Bronze']));
-    document.getElementById('silvermembership').addEventListener('click', () => showMembershipDetails('Silver', membershipContent['Silver']));
-    document.getElementById('goldmembership').addEventListener('click', () => showMembershipDetails('Gold', membershipContent['Gold']));
-});
+if (window.location.pathname.includes('join.html')) {
+    document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById('nonprofitmembership').addEventListener('click', () => showMembershipDetails('Non-Profit', membershipContent['Non-Profit']));
+        document.getElementById('bronzemembership').addEventListener('click', () => showMembershipDetails('Bronze', membershipContent['Bronze']));
+        document.getElementById('silvermembership').addEventListener('click', () => showMembershipDetails('Silver', membershipContent['Silver']));
+        document.getElementById('goldmembership').addEventListener('click', () => showMembershipDetails('Gold', membershipContent['Gold']));
+    });
+}
