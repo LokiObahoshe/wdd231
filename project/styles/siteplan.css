@@ -1,0 +1,115 @@
+:root {
+    --background: #CFF6BE;
+    --foreground: #FF90D5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", serif;
+}
+
+body {
+    background-color: #FFEAF7;
+}
+
+main {
+    display: grid;
+    min-height: 90vh;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+    background-color: var(--background);
+    margin: 0;
+    padding: 20px
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 44px;
+    color: black;
+}
+
+section {
+    background-color: white;
+    height: 100%;
+    border: 1px solid var(--background);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: var(--foreground);
+}
+
+section:nth-child(4) {
+    grid-column: span 3;
+    height: auto;
+}
+
+section p,
+section li {
+    padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+    font-family: "Itim", cursive;
+    text-decoration: underline;
+}
+
+p,
+ol {
+    font-family: "Parkinsans", serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--background)
+}
+
+footer p {
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+}
+
+img {
+    margin: 30px;
+    border: 2px solid black;
+}
+
+.images {
+    text-align: center;
+}
+
+.desktop {
+    width: 700px;
+    height: auto;
+}
+
+.mobile {
+    width: 250px;
+    height: auto;
+}
