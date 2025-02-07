@@ -590,10 +590,8 @@ dialog h2 {
 
 
 #displayplaces div img {
-    width: 100%;
-    max-height: 200px;
-    height: auto;
-    max-width: 300px;
+    max-width: 450px;
+    max-height: 300px;
     aspect-ratio: 1.50;
 }
 
@@ -692,7 +690,7 @@ dialog h2 {
 
     #displayplaces div {
         grid-template-areas:
-            "image name"
+            "name name"
             "image desc"
             "image address"
             "image button";
@@ -700,6 +698,12 @@ dialog h2 {
 
     #displayplaces div img {
         width: 300px;
+        margin: 20px;
+    }
+
+    #displayplaces div img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px var(--foreground);
     }
 }
 
@@ -834,5 +838,12 @@ dialog h2 {
     #displayplaces {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #displayplaces div img {
+        width: 100%;
+        max-height: 200px;
+        height: auto;
+        max-width: 300px;
     }
 }
