@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - Discover Page</title>
     <meta name="author" content="Rebecca Sonderegger">
-    <link rel="icon" href="images/favicon.ico">
+    <link rel="icon" href="images/ba.ico">
     <meta name="description" content="Chamber of Commerce Discover Page">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Chamber of Commerce - Discover Page">
@@ -19,7 +19,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script type="module" src="scripts/discover.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -40,7 +40,15 @@
     </header>
 
     <main class="discovercontainer">
-        <section id="displayplaces"></section>
+
+        <div id="banner">
+            <h2 id="visitsmessage">visits</h2>
+            <button id="closeBanner">❌</button>
+        </div>
+
+        <section id="displayplaces">Discover</section>
+
+        <dialog id="card-details"></dialog>
     </main>
 
     <footer>

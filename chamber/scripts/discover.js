@@ -54,10 +54,66 @@ function placeCard(placeList) {
 
         const placeButton = document.createElement('button');
         placeButton.textContent = `Learn more`;
+        placeButton.addEventListener('click', () => {
+            showcardDetails(place);
+        });
         placeCard.appendChild(placeButton);
 
         displayplaces.appendChild(placeCard);
     });
 }
+
+// Set LocalStorage for Last Visits
+const visitsMessage = document.getElementById('visitsmessage');
+const banner = document.getElementById('banner');
+const closeBanner = document.getElementById('closeBanner');
+
+const lastVisitDate = localStorage.getItem('lastVisitDate');
+const currentDate = new Date();
+let message = '';
+
+if (!lastVisitDate) {
+    message = 'Welcome! Let us know if you have any questions.';
+} else {
+    const lastVisit = new Date(lastVisitDate);
+    const timeDifference = Math.floor((currentDate - lastVisit) / (1000 * 60 * 60 * 24));
+
+    if (timeDifference < 1) {
+        message = 'Back so soon! Awesome!';
+    } else {
+        message = `You last visited ${timeDifference} ${timeDifference === 1 ? 'day' : 'days'} ago.`;
+    }
+}
+
+visitsMessage.textContent = message;
+
+localStorage.setItem('lastVisitDate', currentDate.toISOString());
+
+//Dialog Trigger
+function showcardDetails(place) {
+
+    const cardDetails = document.getElementById('card-details');
+    cardDetails.innerHTML = '';
+    cardDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${place.name}</h2>
+      <p>${place.description}</p>
+    `;
+    cardDetails.showModal();
+
+    const closeModal = document.getElementById('closeModal');
+    closeModal.addEventListener("click", () => {
+        cardDetails.close();
+    });
+}
+
+// Display Visits Message
+visitsMessage.textContent = message;
+
+banner.style.display = 'block';
+
+closeBanner.addEventListener('click', () => {
+    banner.style.display = 'none';
+});
 
 placeCard(places);
