@@ -29,7 +29,7 @@ function placeCard(placeList) {
         // This conditional statement was added to
         // reduce Largest Contentful Paint (LCP) that
         // was removing points in performance
-        if (index === 0) {
+        if (index < 2) {
             placeImage.removeAttribute('loading');
         } else {
             placeImage.setAttribute('loading', 'lazy');
