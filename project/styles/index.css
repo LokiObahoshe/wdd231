@@ -1,0 +1,283 @@
+:root {
+    --background: #CFF6BE;
+    --foreground: #FF90D5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Parkinsans", serif;
+}
+
+body {
+    background-color: #FFEAF7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+button {
+    font-family: "Itim", cursive;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    height: auto;
+    padding: 20px;
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: var(--background);
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+header.open {
+    height: 400px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: var(--foreground);
+    width: 100%;
+}
+
+nav.open {
+    display: flex;
+    height: auto;
+    margin-top: 20px;
+}
+
+nav a {
+    display: none;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--background);
+    color: black;
+}
+
+header img {
+    display: none;
+    position: relative;
+    right: 270px;
+    bottom: 565px;
+    max-width: 100px;
+    height: auto;
+}
+
+footer {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 130px;
+    width: 100%;
+    background-color: var(--background);
+    text-align: center;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer p {
+    color: black;
+    align-items: center;
+    font-size: 20px;
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+button {
+    height: 60px;
+    width: 220px;
+    font-size: 20px;
+    color: black;
+    background-color: var(--foreground);
+    border: none;
+    border-radius: 20px;
+}
+
+button:hover {
+    transform: scale(1.08);
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 210px;
+    z-index: 10;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    background-color: #FFC7EA;
+}
+
+.hero {
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.info section {
+    max-width: 100%;
+    text-align: center;
+    height: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    background: var(--foreground);
+    font-size: 22px;
+}
+
+.sponser {
+    display: flex;
+    position: relative;
+    bottom: 90px;
+    left: 30px;
+    width: 230px;
+    height: 80px;
+    padding: 20px;
+    border: 1px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.indexmain {
+    min-height: 140vh;
+}
+
+@media screen and (min-width: 1000px) {
+
+    header {
+        flex-direction: row;
+        height: 180px;
+    }
+
+    header img {
+        position: static;
+        max-width: 200px;
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 10px;
+        margin: 10px;
+        font-size: 22px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav a:hover {
+        transform: scale(1.1);
+    }
+
+    button {
+        font-size: 30px;
+        height: 100px;
+        width: 255px;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .info section {
+        width: 500px;
+        font-size: 29px;
+    }
+
+    .sponser {
+        width: auto;
+        height: auto;
+        bottom: 300px;
+        left: 85px;
+        position: absolute;
+    }
+
+    .hero {
+        border: none;
+    }
+}

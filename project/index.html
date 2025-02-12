@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Project Home Page - Rebecca Sonderegger</title>
+    <meta name="description" content="WDD 231 - Project Home Page - Rebecca Sonderegger">
+    <meta name="author" content="Rebecca Sonderegger">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" type="image/x-icon" href="images/favicontrothmoth.ico">
+    <script type="module" src="scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" aria-label="Logo for website">
+            <img src="images/trothmoth-logo.png" alt="logo">
+        </a>
+        <button id="menu" aria-label="Open menu" type="button"></button>
+        <nav class="navigation">
+            <a class="active" href="index.html">Home</a>
+            <a href="browse.html">Browse</a>
+            <a href="donate.html">Donate</a>
+        </nav>
+    </header>
+
+    <main class="indexmain">
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero.png" media="(min-width: 500px)">
+                <img src="images/hero-small.png" alt="hero image">
+            </picture>
+        </div>
+
+        <div class="sponser">
+            <button onclick="window.location.href='browse.html';">Click here to see some moth facts!</button>
+        </div>
+
+        <div class="info">
+            <section>
+                <h2>Welcome!</h2>
+                <p>Welcome to TrothMoth&copy;, a site that provides information about certain moth breeds along with
+                    riveting fun facts a majority of people may be unaware of.
+                </p>
+            </section>
+
+            <section>
+                <h2>Ready to Adopt?</h2>
+                <p>To find a pet, all you need to do is head to the "Browse" page and find which pet fits best for
+                    you. To adopt a pet you find, please head to our adoption form on the "Adopt" page and fill in the
+                    required criteria.</p>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
+        <br>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
