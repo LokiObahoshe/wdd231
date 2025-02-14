@@ -23,6 +23,13 @@ button {
     font-family: "Itim", cursive;
 }
 
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -43,6 +50,56 @@ header {
     padding: 20px;
     overflow: hidden;
     position: relative;
+}
+
+dialog {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: var(--foreground);
+    box-shadow: 0 0 3rem #777;
+    width: 80%;
+    height: 45%;
+    max-width: 600px;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 0.5);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    background-color: var(--background);
+    color: black;
+    width: 10%;
+    height: 15%;
+    font-size: 20px;
+}
+
+dialog li,
+dialog p {
+    padding: 5px;
+}
+
+dialog p {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+dialog h2 {
+    text-align: center;
+    margin: 0 0 20px 0;
 }
 
 header.open {
@@ -155,6 +212,8 @@ button:hover {
     display: block;
 }
 
+/* ---------------------------index.html----------------------------- */
+
 .active {
     background-color: #FFC7EA;
 }
@@ -209,6 +268,130 @@ button:hover {
     z-index: 5;
 }
 
+#moth-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+    grid-auto-rows: minmax(200px, auto);
+}
+
+.moth-card-css {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    background-color: var(--background);
+    padding: 15px;
+    border: 1px solid #BEBEBE;
+    min-height: 500px;
+    width: auto;
+    height: auto;
+    color: black;
+}
+
+.moth-card-css img {
+    width: 100%;
+    height: 250px;
+    max-width: 1000px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.moth-card-css p {
+    padding: 3px;
+    font-size: 17px;
+}
+
+.moth-card-css h2 {
+    text-decoration: underline;
+}
+
+.moth-card-css h2,
+p {
+    margin-bottom: 10px;
+}
+
+/* ---------------------------donate.html----------------------------- */
+
+form {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: auto;
+    background-color: var(--foreground);
+}
+
+fieldset {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.rating {
+    font-size: 23px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.checkbox input[type=checkbox] {
+    transform: scale(1.4);
+    margin: 10px;
+}
+
+.checkboxhead {
+    font-size: 15px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.date,
+.text,
+.name {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.text select {
+    margin-top: 10px;
+    height: 30px;
+}
+
+.datehead {
+    margin-bottom: 10px;
+}
+
+.namehead {
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    width: 300px;
+    height: 50px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.reviewh1 {
+    text-decoration: underline;
+}
+
+#reviewtextarea {
+    width: 100%;
+}
+
 @media screen and (min-width: 1000px) {
 
     header {
@@ -257,6 +440,8 @@ button:hover {
         width: 255px;
     }
 
+    /* ---------------------------index.html----------------------------- */
+
     .info {
         flex-direction: row;
     }
@@ -276,5 +461,13 @@ button:hover {
 
     .hero {
         border: none;
+    }
+
+    #moth-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .moth-card-css img:hover {
+        transform: scale(1.03);
     }
 }
