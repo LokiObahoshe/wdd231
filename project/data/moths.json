@@ -1,0 +1,178 @@
+[
+    {
+        "scientificName": "Actias luna",
+        "description": "The Luna Moth is known for its large size and beautiful green wings with long tails.",
+        "dialogDesc": "The luna moth (Actias luna), also called the American moon moth, is a Nearctic moth in the family Saturniidae, subfamily Saturniinae, a group commonly named the giant silk moths. The moth has lime-green wings and a white body. Its caterpillars are also green. Its typical wingspan is roughly 114 mm (4.5 in), but wingspans can exceed 178 mm (7.0 in), ranking the species as one of the larger moths in North America. Across Canada, it has one generation per year, with the winged adults appearing in late May or early June, whereas farther south it will have two or even three generations per year, the first appearance as early as March in southern parts of the United States. As defense mechanisms, larvae emit clicks as a warning and can also regurgitate intestinal contents, confirmed as having a deterrent effect on a variety of predators. The elongated tails of the hindwings are thought to confuse the echolocation detection used by predatory bats. A parasitoid fly deliberately introduced to North America as a biological pest control for the invasive species spongy moth (also known as gypsy moth) appears to have had a negative impact on luna moths and other native moths.",
+        "image": "images/lunamoth.webp",
+        "location": "North America, parts of Canada",
+        "lifeExpectancy": "7-10 days",
+        "diet": "Leaves of trees like walnut, birch, and hickory.",
+        "threats": "Loss of habitat, light pollution.",
+        "commonName": "Luna Moth"
+    },
+    {
+        "scientificName": "Hyalophora cecropia",
+        "description": "The Cecropia Moth is one of the largest moths in North America, with reddish-brown and white patterns.",
+        "dialogDesc": "Hyalophora cecropia, the cecropia moth, is North America's largest native moth. It is a member of the family Saturniidae, or giant silk moths. Females have been documented with a wingspan of five to seven inches (13 to 18 cm) or more. These moths can be found predominately across the east of North America, with occurrences as far west as Washington and north into the majority of Canadian provinces. Cecropia moth larvae are most commonly found on maple trees, but they have also been found on cherry and birch trees among many others. The species was first described by Carl Linnaeus in his 1758 10th edition of Systema Naturae.",
+        "image": "images/cecropiamoth.webp",
+        "location": "North America",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of trees such as maple, birch, and cherry.",
+        "threats": "Predators, habitat destruction.",
+        "commonName": "Cecropia Moth"
+    },
+    {
+        "scientificName": "Antheraea polyphemus",
+        "description": "The Polyphemus Moth has large eyespots on its wings that help it evade predators.",
+        "dialogDesc": "Antheraea polyphemus, the Polyphemus moth, is a North American member of the family Saturniidae, the giant silk moths. It is a tan-colored moth, with an average wingspan of 15 cm (6 in). The most notable feature of the moth is its large, purplish eyespots on its two hindwings. The eyespots give it its name – from the Greek myth of the cyclops Polyphemus. The species was first described by Pieter Cramer in 1776. The species is widespread in continental North America, with local populations found throughout subarctic Canada and the United States. The caterpillar can eat 86,000 times its weight at emergence in a little less than two months. Polyphemus moths are considered to be very polyphagous, meaning they eat from a wide variety of plants.",
+        "image": "images/polyphemusmoth.webp",
+        "location": "North America",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of various trees including oak and willow.",
+        "threats": "Predators, habitat loss.",
+        "commonName": "Polyphemus Moth"
+    },
+    {
+        "scientificName": "Saturnia pavonia",
+        "description": "The Emperor Moth is a large moth with purple, yellow, and brown coloring.",
+        "dialogDesc": "The Saturniinae or saturniines are a subfamily of the family Saturniidae, also known as giant silkmoths. They are commonly known as emperor moths or wild silk moths. They are easily spotted by the eyespots on the upper surface of their wings. Some exhibit realistic eye-like markings, whilst others have adapted the eyespots to form crescent moon or angular shapes or have lost their wing scales to create transparent windows. They are medium to very large moths, with adult wingspans ranging from 7.5 to 15 cm, in some cases even more. They consist of some of the largest sized Lepidoptera, such as the luna moth, atlas moth, and many more. The Saturniinae is an important source of wild silk and human food in many different cultures. The saturniine genera, approximately 169 in number, are divided into four major and one minor (Micragonini) tribes. The genus Adafroptilum presently consists of a group of species with undetermined relationships. Adults in the Saturniinae typically live about 5–12 days and are mostly nocturnal, excluding males in four of the subfamilies. The moths do not eat during their short lives and their mouths are not fully formed. In some species of Saturniinae, there is unmistakable sexual dimorphism. The females in these subfamilies can weigh almost double that of the males, are larger in size, and have larger wings. The Saturniinae's eggs are oblong and are laid flat against each other in clusters. Once hatched, the larval period lasts about 78 days. They typically pass through five larval instars (excluding egg, pupa and adult), although some may have more. The pupal stage takes place in an often yellowish cocoon. In this stage, they resemble small wooden barrels in shape and color.",
+        "image": "images/emperormoth.webp",
+        "location": "United Kingdom",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of deciduous trees like oak and birch.",
+        "threats": "Climate change, predators.",
+        "commonName": "Emperor Moth"
+    },
+    {
+        "scientificName": "Dryocampa rubicunda",
+        "description": "The Rosy Maple Moth is a colorful moth with vibrant yellow and pink wings.",
+        "dialogDesc": "Dryocampa rubicunda, the rosy maple moth, is a small North American moth in the family Saturniidae, also known as the great silk moths. It was first described by Johan Christian Fabricius in 1793. The species is known for its wooly body and pink and yellow coloration, which varies from cream or white to bright pink or yellow. Males have bushier antennae than females, which allow them to sense female pheromones for mating. As the common name of the species implies, the preferred host trees are maple trees. Adult females lay their yellow ovular eggs in groups of 10 to 40 on the underside of maple leaves. The emerging caterpillars, also known as the greenstriped mapleworm, mainly feed on the leaves of their host maple trees, particularly red maple, silver maple, and sugar maple. Since the caterpillars eat the entire leaf blade, in dense populations, caterpillars have been known to defoliate trees, resulting in aesthetic rather than permanent damage. However, like all other Saturniid moths, the adult moths do not eat.",
+        "image": "images/rosymaplemoth.jpg",
+        "location": "Eastern North America",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of maples and other hardwood trees.",
+        "threats": "Loss of habitat.",
+        "commonName": "Rosy Maple Moth"
+    },
+    {
+        "scientificName": "Acherontia atropos",
+        "description": "The Death's-head Hawkmoth is famous for its skull-like pattern on the thorax.",
+        "dialogDesc": "The name death's-head hawkmoth refers to any of three moth species of the genus Acherontia (Acherontia atropos, Acherontia styx and Acherontia lachesis). The former species is found throughout Africa and in Europe, the latter two are Asian; most uses of the common name refer to the African species. These moths are easily distinguishable by the vaguely human skull-shaped pattern of markings on the thorax. They are large nocturnal moths with brown and yellow or orange coloring, and all three species are fairly similar in size, coloration and life cycle.",
+        "image": "images/deathsheadhawkmoth.webp",
+        "location": "Europe, parts of Africa and Asia",
+        "lifeExpectancy": "2-3 weeks",
+        "diet": "Nectar from flowers.",
+        "threats": "Habitat loss, human persecution.",
+        "commonName": "Death's-head Hawkmoth"
+    },
+    {
+        "scientificName": "Automeris io",
+        "description": "The Io Moth is known for its distinctive large eyespots on the hindwings.",
+        "dialogDesc": "Automeris io, the Io moth (EYE-oh) or peacock moth, is a colorful North American moth in the family Saturniidae. The Io moth is also a member of the subfamily Hemileucinae. The name Io comes from Greek mythology in which Io was a mortal lover of Zeus. The Io moth ranges from the southeast corner of Manitoba and in the southern extremes of Ontario, Quebec, New Brunswick and Nova Scotia in Canada, and in the US it is found from Montana, North Dakota, South Dakota, Nebraska, Colorado, New Mexico, Texas, Utah, east of those states and down to the southern end of Florida. The species was first described by Johan Christian Fabricius in 1775.",
+        "image": "images/iomoth.webp",
+        "location": "North America",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of trees such as willows and oaks.",
+        "threats": "Predators, habitat loss.",
+        "commonName": "Io Moth"
+    },
+    {
+        "scientificName": "Attacus atlas",
+        "description": "The Atlas Moth is one of the largest moths in the world, found in Southeast Asia.",
+        "dialogDesc": "Attacus atlas, the Atlas moth, is a large saturniid moth endemic to the forests of Asia. The species was described by Carl Linnaeus in his 1758 10th edition of Systema Naturae. The Atlas moth is one of the largest lepidopterans, with a wingspan measuring up to 24 cm (9.4 in) and a wing surface area of about 160 cm2 (≈25 in2). It is only surpassed in wingspan by the white witch (Thysania agrippina) and Attacus caesar, and in wing surface area by the Hercules moth (Coscinocera hercules). As in most silk moths, females are noticeably larger and heavier than males, while males have broader antennae.",
+        "image": "images/atlasmoth.webp",
+        "location": "Southeast Asia",
+        "lifeExpectancy": "2-3 weeks",
+        "diet": "Leaves of plants like guava and cinnamon.",
+        "threats": "Habitat loss, deforestation.",
+        "commonName": "Atlas Moth"
+    },
+    {
+        "scientificName": "Hypercompe scribonia",
+        "description": "The Giant Leopard Moth has white wings covered in black spots.",
+        "dialogDesc": "The giant leopard moth (Hypercompe scribonia) is a moth of the family Erebidae. They are distributed through North America from southern Ontario, and southern and eastern United States through New England, Mexico, and south to Colombia. The obsolete name, Ecpantheria scribonia, is still occasionally encountered. They are known to be attracted to bitter, unripe vegetables and broccoli flowers. This moth species has a wingspan of 76 mm (3 in). Its wings are bright white with a pattern of neat black blotches, some solid and some hollow. The overside of the abdomen is dark blue with orange markings, while the underside is white with solid black spots, and males have a narrow yellow line on the sides. Their legs have black and white bands. Adult moths are strictly nocturnal and do not generally fly before nightfall. This species has a notable sexual dimorphism in size, with the adult male reaching about 51 mm (2 in) in length, while the adult female grows up to 30 mm (1.2 in).The leopard moth requires two years to complete its round of life. In Missouri, adults are on the wing from May to September and are multivoltine. During mating sessions, the wings of the male cover most of the female's abdomen, which can sometimes lead to the loss of wing scales in the female and have negative effects on her flight efficiency. Their mating sessions are notably long-lasting, taking more than 24 hours. They stay mostly immobile during the whole process, but move from spot to spot to thermoregulate, walking into shadowy areas if too hot or into sunlight if too cold. The male effectuates the locomotion, while the female folds her legs to make her easier to carry. The caterpillar is of the \"woolly bear\" kind, with a thick coat of black bristles (setae) and red or orange bands between its segments, which become conspicuous when the caterpillar rolls into a ball for defense. Like the banded woolly bear, its hairs are not urticant nor venomous and do not typically cause irritation. The moth overwinters as a caterpillar, often under the bark of decaying wood. The caterpillar grows to be 7.6 cm (3 in) long.",
+        "image": "images/giantleopardmoth.webp",
+        "location": "North America",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of plants in the Carya genus.",
+        "threats": "Predators, habitat loss.",
+        "commonName": "Giant Leopard Moth"
+    },
+    {
+        "scientificName": "Tyria jacobaeae",
+        "description": "The Cinnabar Moth is known for its striking red and black coloring.",
+        "dialogDesc": "The cinnabar moth (Tyria jacobaeae) is a brightly coloured arctiid moth found as a native species in Europe and western and central Asia then east across the Palearctic to Siberia to China. It has been introduced into New Zealand, Australia and North America to control ragwort, on which its larvae feed. The moth is named after the red mineral cinnabar because of the red patches on its predominantly black wings. The species was first described by Carl Linnaeus in his 1758 10th edition of Systema Naturae. Cinnabar moths are about 20 mm (0.79 in) long and have a wingspan of 32–42 mm (1.3–1.7 in). Cinnabar moths are day-flying insects with distinctive pinkish-red and black wings. There is little variation in patterning, although on rare occasions the red markings may be replaced with yellow, or the forewing is entirely red with a black border, or the wings are completely black. Like many other brightly coloured moths, it is unpalatable; the larvae use members of the genus Senecio as food plants. Many members of the genus have been recorded as food plants, but of New World Senecio and Packera species, long-term population success has only been confirmed on the North American native plant Senecio triangularis. Other plant species, such as groundsel, are sometimes used, but larval and population survival tends to be reduced. Newly hatched larvae feed from the underneath of ragwort leaves within the area of their old eggs. The larvae absorb toxic and bitter tasting alkaloid substances from the food plants, and assimilate them, becoming unpalatable themselves. The bright colours of both the larvae and the moths act as warning signs, so they are seldom eaten by predators. An exception is among different species of cuckoo which eat hairy and poisonous caterpillars including cinnabar moth larvae. Females can lay up to 300 eggs, usually in batches of 30 to 60 on the underside of ragwort leaves. When the caterpillars (larvae) hatch they feed on and around the area of the hatched eggs but as they get bigger and moult (instars) they mainly feed on the leaves and flowers of the plant, and can be seen out in the open during the day. Like several other Arctiinae larvae, cinnabar caterpillars can turn cannibalistic. This is mainly due to lack of food, but they can eat other cinnabar larvae. Initially, the larvae are pale yellow, but later larval stages develop a jet-black and orange/yellow striped colouring. They can grow up to 30 mm (1.2 in), and are voracious eaters; large populations can strip entire patches of ragwort clean, a result of their low predation. Often, very few survive to the pupal stage, mainly due to them completely consuming the food source before reaching maturity; this could be a possible explanation for their tendency to engage in seemingly random cannibalistic behaviour, as many will die from starvation. Additionally, the larvae are preyed upon by species like the ants Formica polyctena. They overwinter as cocoons on the ground.",
+        "image": "images/cinnabarmoth.webp",
+        "location": "Europe, parts of Asia, China",
+        "lifeExpectancy": "2-4 weeks",
+        "diet": "Tansy and ragwort plants.",
+        "threats": "Loss of host plants.",
+        "commonName": "Cinnabar Moth"
+    },
+    {
+        "scientificName": "Lonomia obliqua",
+        "description": "The Lonomia Moth is venomous and found in South America.",
+        "dialogDesc": "The genus Lonomia is a moderate-sized group of fairly cryptic saturniid moths from South America, famous not for the adults, but for their highly venomous caterpillars, which are responsible for a few deaths each year, especially in southern Brazil, and the subject of hundreds of published medical studies. They are commonly known as giant silkworm moth, a name also used for a wide range of other saturniid moths. The caterpillars are themselves extremely cryptic, blending in against the bark of trees, where the larvae commonly aggregate. The larvae, like most hemileucines, are covered with urticating hairs, but these caterpillars possess a uniquely potent anticoagulant venom.",
+        "image": "images/lonomiamoth.webp",
+        "location": "South America, particularly Brazil",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Leaves of trees, particularly those in the Salicaceae family.",
+        "threats": "Venomous stings, human interactions.",
+        "commonName": "Lonomia Moth"
+    },
+    {
+        "scientificName": "Sphingidae (Family)",
+        "description": "Sphinx Moths are a family known for their strong flight abilities and long, narrow bodies.",
+        "dialogDesc": "The Sphingidae are a family of moths commonly called sphinx moths, also colloquially known as hawk moths, with many of their caterpillars known as hornworms. It includes about 1,450 species. It is best represented in the tropics, but species are found in every region. They are moderate to large in size and are distinguished among moths for their agile and sustained flying ability, similar enough to that of hummingbirds as to be reliably mistaken for them. Their narrow wings and streamlined abdomens are adaptations for rapid flight. The family was named by French zoologist Pierre André Latreille in 1802. Some hawk moths, such as the hummingbird hawk-moth or the white-lined sphinx, hover in midair while they feed on nectar from flowers, so are sometimes mistaken for hummingbirds. This hovering capability is only known to have evolved four times in nectar feeders: in hummingbirds, certain bats, hoverflies, and these sphingids (an example of convergent evolution). Sphingids have been studied for their flying ability, especially their ability to move rapidly from side to side while hovering, called \"swing-hovering\" or \"side-slipping\". This is thought to have evolved to deal with ambush predators that lie in wait in flowers. Sphingids are some of the faster flying insects; some are capable of flying at over 5.3 m/s (19 km/h). They have wingspans from 4 cm (1+1⁄2 in) to over 10 cm (4 in).",
+        "image": "images/sphinxmoth.jpg",
+        "location": "Worldwide",
+        "lifeExpectancy": "2-3 weeks",
+        "diet": "Nectar from various flowers.",
+        "threats": "Habitat destruction, pesticide use.",
+        "commonName": "Sphinx Moth"
+    },
+    {
+        "scientificName": "Hemaris spp.",
+        "description": "Hummingbird Moths resemble hummingbirds, often seen hovering at flowers.",
+        "dialogDesc": "Hemaris is a genus of sphinx moths in the subfamily Macroglossinae, which is native to the Holarctic. Their main host plants are herbs and shrubs of the teasel and honeysuckle families. Moths in genus Hemaris are known collectively as clearwing moths or hummingbird moths in the US and Canada and bee hawk-moths in Britain. The related Old World hummingbird hawk-moths, genus Macroglossum, are similar in appearance and habits. Both genera have tails that are provided with an expansile truncated tuft of hairs, but only Hemaris has the disc of the wings transparent, as these scales are dropped soon after eclosion.",
+        "image": "images/hummingbirdmoth.webp",
+        "location": "North America, parts of Europe",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Nectar from flowers.",
+        "threats": "Habitat loss, pesticide use.",
+        "commonName": "Hummingbird Moth"
+    },
+    {
+        "scientificName": "Euthrix potatoria",
+        "description": "The Drinker Moth has pale yellowish-brown coloring and a distinct dark stripe.",
+        "dialogDesc": "Euthrix potatoria, the drinker, is an orange-brown moth of the family Lasiocampidae. The species' common and scientific names derive from the larva's supposed drinking of drops of dew. This species can be found in Europe. The species is fairly common in the southern half of Britain. In Scotland, it is common in the west but not in the east of the country. It is most frequently found in marshy places, fens and riversides but may also be seen in drier, grassy terrain. This nocturnal moth flies from June to August depending on the location. Males especially are attracted to light. The females lay their eggs in small clusters, mainly on the stem of grasses or reeds. The larvae feed on various grasses and reeds.",
+        "image": "images/drinkermoth.webp",
+        "location": "Europe",
+        "lifeExpectancy": "2-3 weeks",
+        "diet": "Various plants.",
+        "threats": "Habitat destruction.",
+        "commonName": "Drinker Moth"
+    },
+    {
+        "scientificName": "Pterophorus pentadactyla",
+        "description": "White Plume Moths are a delicate, slender moth with striking white, plume-like wings that are divided into several segments",
+        "dialogDesc": "Pterophorus pentadactyla, commonly known as the white plume moth, is a moth in the family Pterophoridae. It is found in the West Palearctic including North Africa and Europe. The wingspan is 26–34 mm (1.0–1.3 in). It is uniformly white, with the hind wing pair divided in three feathery plumes and the front pair in another two. The moths fly from June to August. The larvae feed on bindweed (Convolvulus species). The moth is considered a pest species along with the sweet potato butterfly (Acraea acerata), leaf folders (Brachmia and Helcystogramma spp.), and sweet potato army worms (Spodoptera spp.)",
+        "image": "images/whiteplumemoth.webp",
+        "location": "Europe, North Africa",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Bindweed and sweet potato",
+        "threats": "Predators, habitat loss, climate change, pesticide use",
+        "commonName": "White Plume Moth"
+    },
+    {
+        "scientificName": "Creatonotos gangis",
+        "description": "Baphomet Moths are a striking, dark-colored moth known for its distinctive, almost eerie appearance.",
+        "dialogDesc": "Creatonotos gangis, the Baphomet moth, is a species of arctiine moth in South East Asia and Australia. It was described by Carl Linnaeus in his 1763 Centuria Insectorum. It is often listed as a synonym of Creatonotos interrupta, but the identity is unclear. Adult males secrete the pheromone hydroxydanaidal in order to attract mates (via coremata). The amount produced, and the size of the coremata which produce it, are however dependent on the diet that the moth experienced as a caterpillar. If the larval diet contained pyrrolizidine alkaloids, then the coremata become large and the male will release up to 400 micrograms (0.4 milligrams) of hydroxydanaidal, but if it does not, then the coremata do not grow large and no scent is produced.",
+        "image": "images/baphometmoth.jpg",
+        "location": "Souteast Asia, parts of Australia",
+        "lifeExpectancy": "1-2 weeks",
+        "diet": "Groundnuts, rice, ragi, sorghum, Pennisetum americanum, coffee, sweet potato, and lucerne crops",
+        "threats": "Predators, habitat loss, climate change, pesticide use, human activity",
+        "commonName": "Baphomet Moth"
+    }
+]

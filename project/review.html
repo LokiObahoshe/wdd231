@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231 - Project Home Page - Rebecca Sonderegger</title>
-    <meta name="description" content="WDD 231 - Project Home Page - Rebecca Sonderegger">
+    <title>WDD 231 - Project Review Page - Rebecca Sonderegger</title>
+    <meta name="description" content="WDD 231 - Project Review Page - Rebecca Sonderegger">
     <meta name="author" content="Rebecca Sonderegger">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="icon" type="image/x-icon" href="images/favicontrothmoth.ico">
     <script type="module" src="scripts/index.js"></script>
@@ -24,38 +23,17 @@
         </a>
         <button id="menu" aria-label="Open menu" type="button"></button>
         <nav class="navigation">
-            <a class="active" href="index.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="browse.html">Browse</a>
-            <a href="donate.html">Donate</a>
+            <a class="active" href="donate.html">Donate</a>
             <a href="bookmark.html">Bookmark</a>
         </nav>
     </header>
 
-    <main class="indexmain">
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero.png" media="(min-width: 500px)">
-                <img src="images/hero-small.png" alt="hero image">
-            </picture>
-        </div>
-
-        <div class="sponser">
-            <button onclick="window.location.href='browse.html';">Click here to see some moth facts!</button>
-        </div>
-
-        <div class="info">
-            <section>
-                <h2>Welcome!</h2>
-                <p>Welcome to TrothMoth&copy;, a site that provides information about certain moth breeds along with
-                    riveting fun facts a majority of people may be unaware of.
-                </p>
-            </section>
-
-            <section>
-                <h2>Want to Donate?</h2>
-                <p>Want to donate to the cause? Feel free head to our donation form on the "Donate" page and fill in the
-                    required criteria to help support our site.</p>
-            </section>
+    <main class="reviewmain">
+        <div class="thankyou">
+            <h1 class="reviewh1">Thank you!</h1>
+            <div id="results"></div>
         </div>
     </main>
 

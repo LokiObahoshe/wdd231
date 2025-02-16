@@ -26,6 +26,7 @@
             <a href="index.html">Home</a>
             <a href="browse.html">Browse</a>
             <a class="active" href="donate.html">Donate</a>
+            <a href="bookmark.html">Bookmark</a>
         </nav>
     </header>
 
@@ -35,33 +36,33 @@
             <fieldset>
                 <legend>Personal Information</legend>
                 <div class="name">
-                    <label for="fullname" class="namehead">Full Name*</label>
+                    <label for="fullname">Full Name*</label>
                     <input type="text" id="fullname" name="fullname" required>
                 </div>
                 <br>
                 <br>
-                <div>
-                    <label for="address" class="namehead">Address*</label>
+                <div class="personalinfo">
+                    <label for="address">Address*</label>
                     <input type="text" id="address" name="address" required>
 
-                    <label for="city" class="namehead">City*</label>
+                    <label for="city">City*</label>
                     <input type="text" id="city" name="city" required>
 
-                    <label for="state" class="namehead">State*</label>
+                    <label for="state">State*</label>
                     <input type="text" id="state" name="state" required>
 
-                    <label for="zip" class="namehead">ZIP*</label>
+                    <label for="zip">ZIP*</label>
                     <input type="number" id="zip" name="zip" required>
                 </div>
                 <br>
                 <div class="name">
-                    <label for="pnumber" class="namehead">Phone Number</label>
+                    <label for="pnumber">Phone Number</label>
                     <input type="tel" id="pnumber" name="pnumber" pattern="\(\d{3}\) \d{3}-\d{4}"
                         placeholder="(xxx) xxx-xxxx">
                 </div>
                 <br>
                 <div class="name">
-                    <label for="email" class="namehead">Email Address*</label>
+                    <label for="email">Email Address*</label>
                     <input type="email" id="email" name="email" required>
                 </div>
             </fieldset>
@@ -70,12 +71,12 @@
                 <legend>Donation Amount / Payment Information</legend>
                 <br>
                 <div>
-                    <label for="donationfee" class="namehead">Donation Fee</label>
-                    <input type="text" id="donationfee" name="donationfee" disabled>
+                    <label for="donationfee">Donation Fee</label>
+                    <input type="number" id="donationfee" name="donationfee" required>
                 </div>
                 <br>
-                <div>
-                    <div class="checkboxhead">Payment Method: *</div>
+                <div class="paymentmethod">
+                    <div>Payment Method: *</div>
                     <input type="radio" name="payment" id="credit" value="option1" required>
                     <label for="credit">Credit</label>
                     <input type="radio" name="payment" id="debit" value="option2" required>
@@ -87,36 +88,32 @@
 
             <fieldset>
                 <legend>Gift Type</legend>
+                <label for="oneTime">One-time donation</label>
+                <input type="radio" id="oneTime" name="paymentType" value="oneTime">
+                <label for="recurring">Recurring donation</label>
+                <input type="radio" id="recurring" name="paymentType" value="recurring">
+
                 <div>
-                    <div class="checkboxhead">Please select a gift type: *</div>
-                    <label for="oneTime">One-time donation</label>
-                    <input type="radio" id="oneTime" name="paymentType" value="oneTime">
-                    <label for="recurring">Recurring donation</label>
-                    <input type="radio" id="recurring" name="paymentType" value="recurring">
+                    <div>Recurring donation options *</div>
+                    <input type="radio" name="donationFrequency" id="monthly" value="option1" required disabled>
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="donationFrequency" id="quarterly" value="option2" required disabled>
+                    <label for="quarterly">Quarterly</label>
+                    <input type="radio" name="donationFrequency" id="annually" value="option3" required disabled>
+                    <label for="annually">Annually</label>
                 </div>
-                <br>
-                <div>
-                    <div class="checkboxhead">Recurring donation options *</div>
-                    <input type="radio" name="payment" id="credit" value="option1" required>
-                    <label for="credit">Monthly</label>
-                    <input type="radio" name="payment" id="debit" value="option2" required>
-                    <label for="debit">Quarterly</label>
-                    <input type="radio" name="payment" id="check" value="option2" required>
-                    <label for="check">Annually</label>
-                </div>
+
             </fieldset>
 
             <fieldset>
                 <legend>Anonymous Donation</legend>
                 <div class="agreementmove">
-                    <div class="checkboxhead">By submitting this application, I agree to:</div>
-                    <ul>
-                        <li>Mama mia</li>
-                    </ul>
+                    <div>Do you wish to donate anonymously?</div>
 
-                    <div class="checkbox">
-                        <label for="iagree"><input type="checkbox" id="iagree" name="iagree" value="agree" required>
-                            I agree.</label>
+                    <div>
+                        <label for="anonymous"><input type="checkbox" id="anonymous" name="anonymous"
+                                value="optioinalchoice">
+                            Please make my donation anonymous.</label>
                     </div>
                 </div>
             </fieldset>
@@ -134,9 +131,11 @@
     </main>
 
     <footer>
-        <p>&copy;<span id="currentyear"></span> 🍜 Rebecca Sonderegger 🍜 United States</p>
+        <p>&copy;<span id="currentyear"></span> - Rebecca Sonderegger - United States</p>
         <br>
         <p>Last Modification: <span id="lastModified"></span></p>
+        <br>
+        <a class="citation" href="attributions.html">Citations</a>
     </footer>
 </body>
 
